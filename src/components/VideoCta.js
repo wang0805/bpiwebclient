@@ -45,7 +45,7 @@ class VideoCta extends Component {
                     <ModalVideo
                       channel="youtube"
                       isOpen={this.state.isOpen}
-                      videoId="OrS-93U4AYQ"
+                      videoId="WEDIj9JBTC8"
                       onClose={() => this.setState({ isOpen: false })}
                     />
                     <button onClick={this.openModal}>

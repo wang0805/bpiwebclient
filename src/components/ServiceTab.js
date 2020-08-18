@@ -4,13 +4,19 @@ class ServiceTabExample extends Component {
   render() {
     /* service tab menu */
     let serviceTabMenuData = [
-      { iconName: "flaticon-002-welding", tabMenuName: "Land Mining" },
+      {
+        iconName: "flaticon-002-welding",
+        tabMenuName: "Global Clearing Services",
+      },
       {
         iconName: "flaticon-004-walkie-talkie",
-        tabMenuName: "Work Management",
+        tabMenuName: "Access to Emerging Markets Derivatives",
       },
-      { iconName: "flaticon-015-cart", tabMenuName: "Material Engineering" },
-      { iconName: "flaticon-010-tank-1", tabMenuName: "Power and Energy" },
+      {
+        iconName: "flaticon-015-cart",
+        tabMenuName: "Interdealer Broking Services",
+      },
+      { iconName: "flaticon-010-tank-1", tabMenuName: "Advisory" },
     ];
 
     let serviceTabMenuDatalist = serviceTabMenuData.map((val, i) => {
