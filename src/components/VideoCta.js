@@ -23,11 +23,11 @@ class VideoCta extends Component {
               <div className="col-lg-6 col-md-6">
                 <div className="video-cta-content">
                   <h4 className="video-cta-content__small-title">ABOUT US</h4>
-                  <h3 className="video-cta-content__title">Welcome to BPIFL</h3>
+                  <h3 className="video-cta-content__title">Welcome to BPI</h3>
                   <p className="video-cta-content__text">
-                    BPI Financial Group Limited. (BPIFL Group) through its
+                    BPI Financial Group Limited. (BPIF Group) through its
                     subsidiaries, are licenced to operate regulated businesses
-                    in Hong Kong and Singapore. BPIFL is a subsidiary of a Hong
+                    in Hong Kong and Singapore. BPIF is a subsidiary of a Hong
                     Kong Exchange listed company – Theme International Holdings
                     Limited
                   </p>
