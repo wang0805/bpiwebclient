@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import FeatureIcon from "../components/FeatureIcon";
-import Funfact from "../components/Funfact";
+// import Funfact from "../components/Funfact";
 import TeamMemberGrid from "../components/TeamMemberGrid";
-import TestimonialSlider from "../components/TestimonialSlider";
-import BrandLogoSlider from "../components/BrandLogoSlider";
+// import TestimonialSlider from "../components/TestimonialSlider";
+// import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import ModalVideo from "react-modal-video";
@@ -71,20 +71,31 @@ class About extends Component {
                 </div>
                 <div className="col-lg-6 col-12 mb-30">
                   <div className="about-content-two">
-                    <h3>Welcome to Castro</h3>
-                    <h1>50 Years of Experience in Industry</h1>
+                    <h3>Welcome to BPI Financial Group Limited</h3>
+                    {/* <h1>50 Years of Experience in Industry</h1> */}
                     <h4>
-                      We are ready to build your dream home Lorem ipsum dolor
-                      sit amet, consectetur adipisicing elit. Dolorum, beatae.
+                      BPI Financial Group Limited. (BPIF Group) through its
+                      subsidiaries is licenced to operate regulated businesses
+                      in Hong Kong and Singapore. BPIF is a subsidiary of a Hong
+                      Kong Exchange listed company – Theme International
+                      Holdings Limited
                     </h4>
+                    <h3>Mission</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ipsam repudiandae odit dolorum quis laudantium impedit
-                      beatae perferendis natus, hic libero sed atque quibusdam
-                      possimus error, voluptate est molestiae doloremque
-                      necessitatibus illum rerum sunt! Ad sunt obcaecati
-                      voluptatem sint sequi quos, qui non deleniti a
-                      praesentium, sapiente accusantium odit.
+                      BPIF Group aspires to establish a financial services
+                      platform facilitating international trade in commodities
+                      with combined access to both physical and derivatives
+                      market. The spirit and aspiration in starting BPIF Group
+                      is to establish a financial services platform facilitating
+                      international trade in commodities with combined access to
+                      both physical and derivatives market. The service
+                      providers in the market in general and more so in Asia,
+                      are fragmented. Traditional market participants operate
+                      either solely in physical commodity market or entirely in
+                      the financial space.. The ability to combine services
+                      access to both the derivatives and physical market
+                      powerful and allows firms in that combined space with
+                      greater reach to its customers
                     </p>
                     <a
                       href="services"
@@ -119,26 +130,31 @@ class About extends Component {
                 <div className="col-lg-6 col-12 order-3 order-lg-1">
                   <div className="about-content about-content-1">
                     <h1>
-                      <span>50</span>Years of Experience
+                      <span>Regulatory Licenses</span>
                     </h1>
                     <p>
-                      ligendi optio cumque nihil impedit quo minus id quod
-                      maxime placeat facere possimus, omnis voluptas assumenda
-                      est, omnis dolor ellendus. Temporibus autem quibusdam et
-                      aut officiis debitis aut rerum atibus saepe eveniet ut et
-                      voluptates repudiandae sint et molestiae
+                      BPIF Group through its subsidiaries, hold a Securities and
+                      Futures Commission (SFC) Type 2 license in Hong Kong and
+                      has a regulatory exemption in Singapore to offer
+                      interdealer brokerage services for negotiated large trades
+                      in commodity futures. The SFC Type 2 license allows BPIF
+                      Group's subsidiary, Bright Point International Futures
+                      Limited, to collect customer funds for the purposes of
+                      dealing, clearing and settlement of derivatives across
+                      multi assets and multi exchanges and clearing houses
+                      globally
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-12 order-4">
                   <div className="about-content about-content-2">
                     <p>
-                      ligendi optio cumque nihil impedit quo minus id quod
-                      maxime placeat facere possimus, omnis voluptas assumenda
-                      est, omnis dolor ellendus. Temporibus autem quibusdam et
-                      aut officiis debitis aut rerum atibus saepe eveniet ut et
-                      voluptates repudiandae sint et molestiae non recusandae.
-                      Itaque earum rerum hic tenetur a sapie
+                      Our shareholders collectively represent different segments
+                      of the industry including producers and miners (of bulk
+                      commodities – iron ore and coking coal), consumers of bulk
+                      commodities (top steel producer) and commodity trading
+                      funds (bringing a financial trading perspective which is
+                      distinct from physical commodity market)
                     </p>
                     <a
                       href={`${process.env.PUBLIC_URL}/contact-us`}
