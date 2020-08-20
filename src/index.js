@@ -2,8 +2,13 @@ import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import reducer from "./store/reducer";
+import { I18nextProvider } from "react-i18next";
+import i18n from "../i18n";
+
 import "./index.scss";
-// import DemoIndex from "./demo_page/Demo";
 import HomeOne from "./HomeOne";
 import HomeTwo from "./HomeTwo";
 import HomeThree from "./HomeThree";
@@ -115,6 +120,15 @@ class Root extends Component {
   }
 }
 
-ReactDOM.render(<Root />, document.getElementById("root"));
+const store = createStore(reducer);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <I18nextProvider i18n={i18n}>
+      <Root />
+    </I18nextProvider>
+  </Provider>,
+  document.getElementById("root")
+);
 
 serviceWorker.register();

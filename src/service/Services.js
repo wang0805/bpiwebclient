@@ -3,16 +3,19 @@ import NavBar from "../components/NavBar";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import { withTranslation } from "react-i18next";
+
 class Services extends Component {
   render() {
+    const { t } = this.props;
+
     let data = [
       {
         pageLink: "service-details-left-sidebar",
         img: "service1.jpg",
         iconClass: "flaticon-002-welding",
         serviceTitle: "Global Clearing Services",
-        serviceSubtitle:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+        serviceSubtitle: t("subtitle"),
       },
       {
         pageLink: "service-details-left-sidebar",
@@ -154,4 +157,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default withTranslation("translations")(Services);

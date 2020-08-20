@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
+import { withTranslation } from "react-i18next";
+
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { lang: "en" };
     this.handleScroll = this.handleScroll.bind(this);
 
     this.mobileMenuElement = React.createRef();
@@ -37,7 +39,15 @@ class NavBar extends Component {
     this.mount = false;
   }
 
+  handleClick = (x) => {
+    let value = x;
+    this.setState((prevState) => ({ lang: value }));
+    this.props.i18n.changeLanguage(value);
+  };
+
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         {/*====================  header area ====================*/}
@@ -88,12 +98,41 @@ class NavBar extends Component {
                   <div className="col-lg-8">
                     {/* top bar right */}
                     <div className="top-bar-right-wrapper">
-                      <a
+                      <ul className="nav justify-content-end">
+                        <li className="nav-item">
+                          <a
+                            active
+                            className="nav-link active"
+                            href="#"
+                            onClick={() => this.handleClick("en")}
+                          >
+                            ENG
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a
+                            className="nav-link"
+                            href="#"
+                            onClick={() => this.handleClick("ch")}
+                          >
+                            中文
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a
+                            className="nav-link"
+                            href={`${process.env.PUBLIC_URL}/contact-us`}
+                          >
+                            {t("contact")}
+                          </a>
+                        </li>
+                      </ul>
+                      {/* <a
                         href={`${process.env.PUBLIC_URL}/contact-us`}
                         className="ht-btn ht-btn--default d-inline-block"
                       >
                         CONTACT US
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -124,7 +163,7 @@ class NavBar extends Component {
                           </div>
                           <div className="header-info-single-item__content">
                             <h6 className="header-info-single-item__title">
-                              Phone
+                              {t("phone")}
                             </h6>
                             <p className="header-info-single-item__subtitle">
                               +65 6499 0618
@@ -137,7 +176,7 @@ class NavBar extends Component {
                           </div>
                           <div className="header-info-single-item__content">
                             <h6 className="header-info-single-item__title">
-                              Address
+                              {t("address")}
                             </h6>
                             <p className="header-info-single-item__subtitle">
                               Springleaf Tower #19-01 Singapore 079909
@@ -172,7 +211,7 @@ class NavBar extends Component {
                             <li className="has-children has-children--multilevel-submenu">
                               <Link to={`${process.env.PUBLIC_URL}/home-one`}>
                                 {" "}
-                                HOME{" "}
+                                {t("home")}{" "}
                               </Link>
                               <ul className="submenu">
                                 <li>
@@ -200,12 +239,12 @@ class NavBar extends Component {
                             </li>
                             <li>
                               <Link to={`${process.env.PUBLIC_URL}/about-us`}>
-                                ABOUT
+                                {t("about")}
                               </Link>
                             </li>
                             <li className="has-children has-children--multilevel-submenu">
                               <Link to={`${process.env.PUBLIC_URL}/services`}>
-                                SERVICE
+                                {t("service")}
                               </Link>
                               <ul className="submenu">
                                 <li>
@@ -291,7 +330,7 @@ class NavBar extends Component {
                             </li> */}
                             <li>
                               <Link to={`${process.env.PUBLIC_URL}/contact-us`}>
-                                CONTACT
+                                {t("contact")}
                               </Link>{" "}
                             </li>
                           </ul>
@@ -314,4 +353,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withTranslation("translations")(NavBar);
