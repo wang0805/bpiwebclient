@@ -5,6 +5,8 @@ import ReactDOM from "react-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducer from "./store/reducer";
+import { I18nextProvider } from "react-i18next";
+import i18n from "../i18n";
 
 import "./index.scss";
 import HomeOne from "./HomeOne";
@@ -122,7 +124,9 @@ const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
-    <Root />
+    <I18nextProvider i18n={i18n}>
+      <Root />
+    </I18nextProvider>
   </Provider>,
   document.getElementById("root")
 );
