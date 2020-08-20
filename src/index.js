@@ -10,12 +10,12 @@ import i18n from "../i18n";
 
 import "./index.scss";
 import HomeOne from "./HomeOne";
-import HomeTwo from "./HomeTwo";
-import HomeThree from "./HomeThree";
+// import HomeTwo from "./HomeTwo";
+// import HomeThree from "./HomeThree";
 import About from "./pages/About";
 import Services from "./service/Services";
 import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
-import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
+// import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
 import Projects from "./project/Projects";
 import ProjectDetails from "./project/ProjectDetails";
 import BlogLeftSidebar from "./blog/BlogLeftSidebar";

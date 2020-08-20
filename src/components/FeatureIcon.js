@@ -5,21 +5,21 @@ class FeatureIcon extends Component {
     let data = [
       {
         featureIcon: "feature-1.png",
-        featureTitle: "Top Iron Ore Clearing",
+        featureTitle: "SFC Type II Licence",
         featureDescription:
-          "Lorem ipsum dolor sit amet, consec tetur adipisicing elit. Officia odio eum corporis consequatur.",
+          "BPIF holds a Securities and Futures Commission (SFC) Type II Licence in Hong Kong to conduct clearing services of derivatives from global exchanges",
       },
       {
         featureIcon: "feature-2.png",
-        featureTitle: "Best Service",
+        featureTitle: "Commodities IDB",
         featureDescription:
-          "Lorem ipsum dolor sit amet, consec tetur adipisicing elit. Officia odio eum corporis consequatur.",
+          "BPIF has a regulatory exemption in Singapore to offer interdealer broking services for Negotiated Large Trades in commodities futures; SGX Iron Ore in particular",
       },
       {
         featureIcon: "feature-3.png",
-        featureTitle: "One Stop Solution",
+        featureTitle: "Chinese derivatives CFD",
         featureDescription:
-          "Lorem ipsum dolor sit amet, consec tetur adipisicing elit. Officia odio eum corporis consequatur.",
+          "BPIF also offers electronic trading access on commodities derivatives from Chinese Exchanges such as DCE, INE and SHFE in the form of CFDs",
       },
     ];
 
