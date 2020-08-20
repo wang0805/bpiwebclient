@@ -147,7 +147,7 @@ class NavBar extends Component {
                     <div className="header-info-wrapper align-items-center">
                       {/* logo */}
                       <div className="logo">
-                        <Link to={`${process.env.PUBLIC_URL}/home-one`}>
+                        <Link to={`${process.env.PUBLIC_URL}/home`}>
                           <img
                             src="assets/img/logo/bpi_logo.png"
                             className="img-fluid"
@@ -208,12 +208,18 @@ class NavBar extends Component {
                       <div className="header-navigation__nav position-static">
                         <nav>
                           <ul>
-                            <li className="has-children has-children--multilevel-submenu">
-                              <Link to={`${process.env.PUBLIC_URL}/home-one`}>
+                            <li>
+                              <Link to={`${process.env.PUBLIC_URL}/home`}>
                                 {" "}
                                 {t("home")}{" "}
                               </Link>
-                              <ul className="submenu">
+                            </li>
+                            {/* <li className="has-children has-children--multilevel-submenu">
+                              <Link to={`${process.env.PUBLIC_URL}/home`}>
+                                {" "}
+                                {t("home")}{" "}
+                              </Link> 
+                            <ul className="submenu">
                                 <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/home-one`}
@@ -235,8 +241,8 @@ class NavBar extends Component {
                                     Homepage Three
                                   </Link>
                                 </li>
-                              </ul>
-                            </li>
+                              </ul> 
+                            </li>*/}
                             <li>
                               <Link to={`${process.env.PUBLIC_URL}/about-us`}>
                                 {t("about")}
@@ -251,23 +257,23 @@ class NavBar extends Component {
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/services`}
                                   >
-                                    Service Page
+                                    Service List
                                   </Link>
                                 </li>
                                 <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
                                   >
-                                    Service Details Left Sidebar
+                                    Services More
                                   </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
                                   >
                                     Service Details Right Sidebar
                                   </Link>
-                                </li>
+                                </li> */}
                               </ul>
                             </li>
                             {/* <li className="has-children has-children--multilevel-submenu">
