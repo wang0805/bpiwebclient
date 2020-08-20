@@ -91,7 +91,7 @@ class Contact extends Component {
                         </span>
                         <span className="text">
                           <a href="mailto:Clearing@bpifinancial.com">
-                            Clearing@bpifinancial.com
+                            Clearing@bpifinancial.com Sales@bpifinancial.com
                           </a>
                           {/* <a href="mailto:info@example.com">info@example.com</a> */}
                         </span>

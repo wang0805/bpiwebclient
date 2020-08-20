@@ -73,13 +73,13 @@ class About extends Component {
                   <div className="about-content-two">
                     <h3>Welcome to BPI Financial Group Limited</h3>
                     {/* <h1>50 Years of Experience in Industry</h1> */}
-                    <h4>
+                    <p>
                       BPI Financial Group Limited. (BPIF Group) through its
                       subsidiaries is licenced to operate regulated businesses
                       in Hong Kong and Singapore. BPIF is a subsidiary of a Hong
                       Kong Exchange listed company – Theme International
                       Holdings Limited
-                    </h4>
+                    </p>
                     <h3>Mission</h3>
                     <p>
                       BPIF Group aspires to establish a financial services
@@ -129,32 +129,37 @@ class About extends Component {
                 </div>
                 <div className="col-lg-6 col-12 order-3 order-lg-1">
                   <div className="about-content about-content-1">
-                    <h1>
-                      <span>Regulatory Licenses</span>
-                    </h1>
+                    <h3>
+                      <span>Our Shareholders</span>
+                    </h3>
                     <p>
-                      BPIF Group through its subsidiaries, hold a Securities and
-                      Futures Commission (SFC) Type 2 license in Hong Kong and
-                      has a regulatory exemption in Singapore to offer
-                      interdealer brokerage services for negotiated large trades
-                      in commodity futures. The SFC Type 2 license allows BPIF
-                      Group's subsidiary, Bright Point International Futures
-                      Limited, to collect customer funds for the purposes of
-                      dealing, clearing and settlement of derivatives across
-                      multi assets and multi exchanges and clearing houses
-                      globally
+                      Our shareholders are diversified and purposefully cherry
+                      picked to represent different segments of the industry
+                      making up of top producer, consumer and funds collectively
+                      <br />
+                      <br />
+                      In addition to Theme International Holdings Limited,
+                      minority shareholders in BPIF includes one of the largest
+                      privately Iron Ore miner globally, one of the largest
+                      privately owned steel mills in Mainland China, as well as
+                      one of the active commodity focused investment fund in the
+                      industry
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-12 order-4">
                   <div className="about-content about-content-2">
+                    <h3>
+                      <span>Subsidaries under BPIF</span>
+                    </h3>
                     <p>
-                      Our shareholders collectively represent different segments
-                      of the industry including producers and miners (of bulk
-                      commodities – iron ore and coking coal), consumers of bulk
-                      commodities (top steel producer) and commodity trading
-                      funds (bringing a financial trading perspective which is
-                      distinct from physical commodity market)
+                      Bright Point International Futures Limited (HK)
+                      <br />
+                      Bright Point International Futures (SG) Pte Ltd
+                      <br />
+                      BPI Trading (SG) Pte Ltd
+                      <br />
+                      Guang Dian International Trading Limited (CN)
                     </p>
                     <a
                       href={`${process.env.PUBLIC_URL}/contact-us`}
