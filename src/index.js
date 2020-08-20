@@ -40,10 +40,10 @@ class Root extends Component {
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/home-one`}
+            path={`${process.env.PUBLIC_URL}/home`}
             component={HomeOne}
           />
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/home-two`}
             component={HomeTwo}
@@ -52,7 +52,7 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/home-three`}
             component={HomeThree}
-          />
+          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/about-us`}
@@ -68,11 +68,11 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
             component={ServiceDetailsLeftSidebar}
           />
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
             component={ServiceDetailsRightSidebar}
-          />
+          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/projects`}
