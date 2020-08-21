@@ -10,7 +10,7 @@ class ServiceTabExample extends Component {
       },
       {
         iconName: "flaticon-004-walkie-talkie",
-        tabMenuName: "Emerging Markets CFDs",
+        tabMenuName: "Emerging Markets CFD",
       },
       {
         iconName: "flaticon-015-cart",
@@ -38,28 +38,28 @@ class ServiceTabExample extends Component {
         bgUrl: "service-tab1.jpg",
         contentTitle: "Global Clearing Services",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "BPIFG provides market trading access and clearing services for global derivative markets across most Exchanges and asset classes including Internationalized derivatives from Chinese Exchanges",
         serviceLink: "service-details-left-sidebar",
       },
       {
         bgUrl: "service-tab1.jpg",
-        contentTitle: "Access to Emerging Markets Derivatives",
+        contentTitle: "Access to Emerging Markets Derivatives via CFD",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges (DCE, ZCE, INE) cleared Commoditiy Derivatives",
         serviceLink: "service-details-left-sidebar",
       },
       {
         bgUrl: "service-tab1.jpg",
         contentTitle: "Inter-Dealer Broking Services",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
         serviceLink: "service-details-left-sidebar",
       },
       {
         bgUrl: "service-tab1.jpg",
         contentTitle: "Advisory",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
         serviceLink: "service-details-left-sidebar",
       },
     ];

@@ -141,7 +141,7 @@ class About extends Component {
                 <div className="col-lg-6 col-12 order-4">
                   <div className="about-content about-content-2">
                     <h3>
-                      <span>Subsidaries under BPIF</span>
+                      <span>Subsidaries under BPIFG</span>
                     </h3>
                     <p>
                       Across Asia, we have presence in Hong Kong, Singapore and

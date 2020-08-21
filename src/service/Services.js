@@ -15,23 +15,23 @@ class Services extends Component {
         img: "service1.jpg",
         iconClass: "flaticon-002-welding",
         serviceTitle: "Global Clearing Services",
-        serviceSubtitle: t("subtitle"),
+        serviceSubtitle: t("clearing"),
       },
       {
         pageLink: "service-details-left-sidebar",
         img: "service2.jpg",
         iconClass: "flaticon-004-walkie-talkie",
-        serviceTitle: "Access to Emerging Markets Derivatives",
+        serviceTitle: "Emerging Markets CFD",
         serviceSubtitle:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges cleared Commoditiy Derivatives",
       },
       {
         pageLink: "service-details-left-sidebar",
         img: "service3.jpg",
         iconClass: "flaticon-015-cart",
-        serviceTitle: "Interdealer Broking Services",
+        serviceTitle: "Inter-Dealer Broker",
         serviceSubtitle:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
       },
       {
         pageLink: "service-details-left-sidebar",
@@ -39,7 +39,7 @@ class Services extends Component {
         iconClass: "flaticon-010-tank-1",
         serviceTitle: "Advisory",
         serviceSubtitle:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
       },
       //   {
       //     pageLink: "service-details-left-sidebar",

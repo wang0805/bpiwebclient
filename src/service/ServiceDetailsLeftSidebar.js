@@ -53,49 +53,42 @@ class ServiceDetailsLeftSidebar extends Component {
                         <div className="col-12">
                           <h2>Global Clearing Services</h2>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Ratione, sunt perspiciatis error id ipsa atque
-                            unde quis dolore nobis eum aperiam enim blanditiis
-                            pariatur inventore eius commodi consectetur ut.
-                            Totam, assumenda! Laboriosam possimus, corporis
-                            dicta!
+                            BPIFG provides market trading access and clearing
+                            services for global derivative markets across all
+                            developed Exchanges around the world and asset
+                            classes
                           </p>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Asperiores aliquid quod, officiis unde nostrum
-                            itaque! Adipisci dolorum, ab dolor, exercitationem
-                            praesentium dolorem quo voluptatum itaque
-                            dignissimos, sit esse cupiditate. Doloremque rerum
-                            similique a nobis placeat in illum, quo quaerat, ut
-                            repellat, fuga itaque? Nihil mollitia nisi, nam,
-                            accusantium nemo consequuntur reiciendis autem dicta
-                            consequatur earum beatae dolor distinctio, debitis
-                            repudiandae?
+                            We are also able to provide clearing services for
+                            Internationalized derivatives from Chinese Exchanges
+                            such as Dalian Commodity Exchange cleared Iron ore,
+                            and all Shanghai International Energy Exchange
+                            cleared commodity derivatives
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Access to Emerging Markets Derivatives</h3>
+                          <h3>
+                            Access to Emerging Markets Derivatives via CFD
+                          </h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugiat, animi? Vel quas in minima qui totam,
-                            aliquid dolores quaerat voluptatum?
+                            BPIF also provides Electronic Trading Access to
+                            Chinese Exchanges cleared commodity derivatives. On
+                            top of internationalized products, we are also able
+                            to clear all other derivatives via the CFD
+                            instrument
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Inderdealer Broking Services</h3>
+                          <h3>Inder-Dealer Broker</h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugiat, animi? Vel quas in minima qui totam,
-                            aliquid dolores quaerat voluptatum?
+                            BPIFG acts as an intermediary for mainly but not
+                            limited to SGX cleared Iron Ore (Platts 62%, MB 65%,
+                            LP) and Coking Coal derivatives
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Advisory</h3>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugiat, animi? Vel quas in minima qui totam,
-                            aliquid dolores quaerat voluptatum?
-                          </p>
+                          <p>Hedging solutions</p>
                         </div>
                       </div>
                     </div>
