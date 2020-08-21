@@ -74,28 +74,18 @@ class About extends Component {
                     <h3>Welcome to BPI Financial Group Limited</h3>
                     {/* <h1>50 Years of Experience in Industry</h1> */}
                     <p>
-                      BPI Financial Group Limited. (BPIF Group) through its
-                      subsidiaries is licenced to operate regulated businesses
-                      in Hong Kong and Singapore. BPIF is a subsidiary of a Hong
-                      Kong Exchange listed company – Theme International
-                      Holdings Limited
+                      BPI Financial Group Limited (BPIF) is a boutique financial
+                      instituition with a multinational presence
                     </p>
                     <h3>Mission</h3>
                     <p>
-                      BPIF Group aspires to establish a financial services
-                      platform facilitating international trade in commodities
-                      with combined access to both physical and derivatives
-                      market. The spirit and aspiration in starting BPIF Group
-                      is to establish a financial services platform facilitating
-                      international trade in commodities with combined access to
-                      both physical and derivatives market. The service
-                      providers in the market in general and more so in Asia,
-                      are fragmented. Traditional market participants operate
-                      either solely in physical commodity market or entirely in
-                      the financial space.. The ability to combine services
-                      access to both the derivatives and physical market
-                      powerful and allows firms in that combined space with
-                      greater reach to its customers
+                      Our mission is to provide clients with the most
+                      comprehensive and effective trading solutions possible
+                    </p>
+                    <h3>Vision</h3>
+                    <p>
+                      Our vision is to become the best one stop solution
+                      provider in providing trading solutions for every client
                     </p>
                     <a
                       href="services"
@@ -133,13 +123,14 @@ class About extends Component {
                       <span>Our Shareholders</span>
                     </h3>
                     <p>
-                      Our shareholders are diversified and purposefully cherry
-                      picked to represent different segments of the industry
-                      making up of top producer, consumer and funds collectively
+                      Our shareholders are diversified to represent different
+                      segments of the industry making up of top producer,
+                      consumer and funds collectively. Our majority shareholder
+                      is Theme International Holdings Ltd, a public listed
+                      company on Hong Kong Stock Exchange (HK:990)
                       <br />
                       <br />
-                      In addition to Theme International Holdings Limited,
-                      minority shareholders in BPIF includes one of the largest
+                      Minority shareholders in BPIF includes one of the largest
                       privately Iron Ore miner globally, one of the largest
                       privately owned steel mills in Mainland China, as well as
                       one of the active commodity focused investment fund in the
@@ -150,16 +141,21 @@ class About extends Component {
                 <div className="col-lg-6 col-12 order-4">
                   <div className="about-content about-content-2">
                     <h3>
-                      <span>Subsidaries under BPIF</span>
+                      <span>Subsidaries under BPIFG</span>
                     </h3>
                     <p>
-                      Bright Point International Futures Limited (HK)
+                      Across Asia, we have presence in Hong Kong, Singapore and
+                      Shanghai to be closer to our clients. Our entities are
+                      fully regulated in their respective jurisdictions
                       <br />
-                      Bright Point International Futures (SG) Pte Ltd
                       <br />
-                      BPI Trading (SG) Pte Ltd
+                      1. Bright Point International Futures Limited (HK)
                       <br />
-                      Guang Dian International Trading Limited (CN)
+                      2. Bright Point International Futures (SG) Pte Ltd
+                      <br />
+                      3. BPI Trading (SG) Pte Ltd
+                      <br />
+                      4. Guang Dian International Trading Limited (CN)
                     </p>
                     <a
                       href={`${process.env.PUBLIC_URL}/contact-us`}

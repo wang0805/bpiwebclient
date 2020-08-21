@@ -25,11 +25,11 @@ class VideoCta extends Component {
                   <h4 className="video-cta-content__small-title">ABOUT US</h4>
                   <h3 className="video-cta-content__title">Welcome to BPI</h3>
                   <p className="video-cta-content__text">
-                    BPI Financial Group Limited. (BPIF Group) through its
-                    subsidiaries, are licenced to operate regulated businesses
-                    in Hong Kong and Singapore. BPIF is a subsidiary of a Hong
-                    Kong Exchange listed company – Theme International Holdings
-                    Limited
+                    BPI Financial Group Limited (BPIF), through our various
+                    subsidaries, are licenced to operate regulated businesses in
+                    Hong Kong and Singapore. BPIF is also a subsidary of an Hong
+                    Kong Stock Exchange Listed company Theme International
+                    Holdings Limited
                   </p>
                   <a
                     href={`${process.env.PUBLIC_URL}/contact-us`}

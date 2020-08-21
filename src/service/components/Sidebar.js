@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import brochure from "../../../public/assets/pdf/brochure.pdf";
 
 class Sidebar extends Component {
   render() {
@@ -11,12 +12,12 @@ class Sidebar extends Component {
       {
         sidebarListLink: "service-details-left-sidebar",
         sidebarListIcon: "flaticon-010-tank-1",
-        sidebarListText: "Access to Emerging Markets Derivatives",
+        sidebarListText: "Emerging Markets CFD",
       },
       {
         sidebarListLink: "service-details-left-sidebar",
         sidebarListIcon: "flaticon-002-welding",
-        sidebarListText: "Interdealer Broking Services",
+        sidebarListText: "Inter-Dealer Broker",
       },
       {
         sidebarListLink: "service-details-left-sidebar",
@@ -44,20 +45,20 @@ class Sidebar extends Component {
             <ul className="sidebar-list">{Datalist}</ul>
           </div>
           <div className="sidebar">
-            <h3 className="sidebar-title">Download brochure</h3>
+            <h3 className="sidebar-title">Download Brochure</h3>
             <ul className="sidebar-list">
               <li>
-                <a href="/">
+                <a href={brochure}>
                   <i className="fa fa-file-pdf-o" />
-                  Brochures.PDF
+                  Brochure.pdf
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/">
                   <i className="fa fa-file-word-o" />
-                  Brochures.DOC
+                  Brochure.doc
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

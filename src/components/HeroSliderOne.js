@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
+import { withTranslation } from "react-i18next";
 
 class HeroSliderOne extends Component {
   render() {
+    const { t } = this.props;
+
     const params = {
       slidesPerView: 1,
       loop: true,
@@ -33,21 +36,20 @@ class HeroSliderOne extends Component {
         bgImg: "slider3.jpg",
         sliderTitle: "Welcome",
         sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+          "One stop shop in Global Market Access and Trading solutions",
         btnLink: "contact-us",
       },
       {
         bgImg: "slider2.jpg",
         sliderTitle: "Welcome",
         sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+          "Electronic Trading Access into Chinese Exchange cleared commodity derivatives for onshore offshore arbitrage strategies",
         btnLink: "contact-us",
       },
       {
         bgImg: "slider1.jpg",
         sliderTitle: "Welcome",
-        sliderSubtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore et dolore.",
+        sliderSubtitle: "Advisory, Research Analysis and Hedging solutions",
         btnLink: "contact-us",
       },
     ];
@@ -71,7 +73,7 @@ class HeroSliderOne extends Component {
                         href={`${process.env.PUBLIC_URL}/${val.btnLink}`}
                       >
                         {" "}
-                        GET START
+                        {t("contact")}
                       </a>
                     </div>
                   </div>
@@ -95,4 +97,4 @@ class HeroSliderOne extends Component {
   }
 }
 
-export default HeroSliderOne;
+export default withTranslation("translations")(HeroSliderOne);
