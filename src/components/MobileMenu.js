@@ -102,23 +102,23 @@ class MobileMenu extends Component {
                     <ul className="sub-menu">
                       <li>
                         <Link to={`${process.env.PUBLIC_URL}/services`}>
-                          Service Page
+                          Service List
                         </Link>
                       </li>
                       <li>
                         <Link
                           to={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
                         >
-                          Service Details Left Sidebar
+                          More Services
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           to={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
                         >
                           Service Details Right Sidebar
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </li>
                   {/* <li className="menu-item-has-children">
@@ -150,12 +150,12 @@ class MobileMenu extends Component {
                     <ul className="header-contact-info__list">
                       <li>
                         <i className="ion-android-phone-portrait" />{" "}
-                        <a href="tel://12452456012">(1245) 2456 012 </a>
+                        <a href="tel://12452456012">+65 6499 0618 </a>
                       </li>
                       <li>
                         <i className="ion-android-mail" />{" "}
                         <a href="mailto:info@yourdomain.com">
-                          info@yourdomain.com
+                          Sales@bpifinancial.com
                         </a>
                       </li>
                     </ul>
@@ -172,12 +172,12 @@ class MobileMenu extends Component {
                   <a href="#/" title="LinkedIn">
                     <i className="fa fa-linkedin" />
                   </a>
-                  <a href="#/" title="Youtube">
+                  {/* <a href="#/" title="Youtube">
                     <i className="fa fa-youtube-play" />
                   </a>
                   <a href="#/" title="Vimeo">
                     <i className="fa fa-vimeo-square" />
-                  </a>
+                  </a> */}
                 </div>
                 {/*Off Canvas Widget Social End*/}
               </div>
