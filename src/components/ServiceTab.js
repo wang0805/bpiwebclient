@@ -6,15 +6,15 @@ class ServiceTabExample extends Component {
     let serviceTabMenuData = [
       {
         iconName: "flaticon-002-welding",
-        tabMenuName: "Global Clearing Services",
+        tabMenuName: "Global Clearing",
       },
       {
         iconName: "flaticon-004-walkie-talkie",
-        tabMenuName: "Access to Emerging Markets Derivatives",
+        tabMenuName: "Emerging Markets CFDs",
       },
       {
         iconName: "flaticon-015-cart",
-        tabMenuName: "Interdealer Broking Services",
+        tabMenuName: "Inter-Dealer Broker",
       },
       { iconName: "flaticon-010-tank-1", tabMenuName: "Advisory" },
     ];
@@ -50,7 +50,7 @@ class ServiceTabExample extends Component {
       },
       {
         bgUrl: "service-tab1.jpg",
-        contentTitle: "Interdealer Broking Services",
+        contentTitle: "Inter-Dealer Broking Services",
         contentDesc:
           "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         serviceLink: "service-details-left-sidebar",

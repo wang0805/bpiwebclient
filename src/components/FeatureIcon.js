@@ -13,7 +13,7 @@ class FeatureIcon extends Component {
         featureIcon: "feature-2.png",
         featureTitle: "Commodities IDB",
         featureDescription:
-          "BPIF has a regulatory exemption in Singapore to offer interdealer broking services for Negotiated Large Trades in commodities futures; SGX Iron Ore in particular",
+          "BPIF has a regulatory exemption in Singapore to offer interdealer broking services for Negotiated Large Trades in commodities derivatives such as SGX cleared Iron Ore products",
       },
       {
         featureIcon: "feature-3.png",
