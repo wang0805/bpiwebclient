@@ -37,20 +37,20 @@ class HeroSliderOne extends Component {
         sliderTitle: "Welcome",
         sliderSubtitle:
           "One stop shop in Global Market Access and Trading solutions",
-        btnLink: "contact-us",
+        btnLink: "openaccount",
       },
       {
         bgImg: "slider2.jpg",
         sliderTitle: "Welcome",
         sliderSubtitle:
           "Electronic Trading Access into Chinese Exchange cleared commodity derivatives for onshore offshore arbitrage strategies",
-        btnLink: "contact-us",
+        btnLink: "openaccount",
       },
       {
         bgImg: "slider1.jpg",
         sliderTitle: "Welcome",
         sliderSubtitle: "Advisory, Research Analysis and Hedging solutions",
-        btnLink: "contact-us",
+        btnLink: "openaccount",
       },
     ];
 
@@ -73,7 +73,7 @@ class HeroSliderOne extends Component {
                         href={`${process.env.PUBLIC_URL}/${val.btnLink}`}
                       >
                         {" "}
-                        {t("contact")}
+                        {t("acctopening")}
                       </a>
                     </div>
                   </div>

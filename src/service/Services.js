@@ -11,14 +11,14 @@ class Services extends Component {
 
     let data = [
       {
-        pageLink: "service-details-left-sidebar",
+        pageLink: "clearing",
         img: "service1.jpg",
         iconClass: "flaticon-002-welding",
         serviceTitle: "Global Clearing Services",
         serviceSubtitle: t("clearing"),
       },
       {
-        pageLink: "service-details-left-sidebar",
+        pageLink: "cfd",
         img: "service2.jpg",
         iconClass: "flaticon-004-walkie-talkie",
         serviceTitle: "Emerging Markets CFD",
@@ -26,7 +26,7 @@ class Services extends Component {
           "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges cleared Commoditiy Derivatives",
       },
       {
-        pageLink: "service-details-left-sidebar",
+        pageLink: "idb",
         img: "service3.jpg",
         iconClass: "flaticon-015-cart",
         serviceTitle: "Inter-Dealer Broker",
@@ -34,7 +34,7 @@ class Services extends Component {
           "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
       },
       {
-        pageLink: "service-details-left-sidebar",
+        pageLink: "advisory",
         img: "service-3.jpg",
         iconClass: "flaticon-010-tank-1",
         serviceTitle: "Advisory",

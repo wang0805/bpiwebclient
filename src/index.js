@@ -13,8 +13,12 @@ import HomeOne from "./HomeOne";
 // import HomeTwo from "./HomeTwo";
 // import HomeThree from "./HomeThree";
 import About from "./pages/About";
+import AcctOpening from "./pages/Accountopening";
 import Services from "./service/Services";
 import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
+import Clearing from "./service/Clearing";
+import Cfd from "./service/Cfd";
+import Idb from "./service/Idb";
 // import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
 import Projects from "./project/Projects";
 import ProjectDetails from "./project/ProjectDetails";
@@ -43,16 +47,6 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/home`}
             component={HomeOne}
           />
-          {/* <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/home-two`}
-            component={HomeTwo}
-          />
-          <Route
-            exact
-            path={`${process.env.PUBLIC_URL}/home-three`}
-            component={HomeThree}
-          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/about-us`}
@@ -68,11 +62,23 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
             component={ServiceDetailsLeftSidebar}
           />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/clearing`}
+            component={Clearing}
+          />
+          <Route exact path={`${process.env.PUBLIC_URL}/cfd`} component={Cfd} />
+          <Route exact path={`${process.env.PUBLIC_URL}/idb`} component={Idb} />
           {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
             component={ServiceDetailsRightSidebar}
           /> */}
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/openaccount`}
+            component={AcctOpening}
+          />
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/projects`}

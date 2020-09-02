@@ -257,16 +257,34 @@ class NavBar extends Component {
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/services`}
                                   >
-                                    Service List
+                                    Services
                                   </Link>
                                 </li>
                                 <li>
                                   <Link
-                                    to={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
+                                    to={`${process.env.PUBLIC_URL}/clearing`}
                                   >
-                                    Services More
+                                    Global Clearing
                                   </Link>
                                 </li>
+                                <li>
+                                  <Link to={`${process.env.PUBLIC_URL}/cfd`}>
+                                    Emerging Markets CFD
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to={`${process.env.PUBLIC_URL}/idb`}>
+                                    Inter-Dealer Broking
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link
+                                    to={`${process.env.PUBLIC_URL}/advisory`}
+                                  >
+                                    Advisory
+                                  </Link>
+                                </li>
+
                                 {/* <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
@@ -338,6 +356,13 @@ class NavBar extends Component {
                               <Link to={`${process.env.PUBLIC_URL}/contact-us`}>
                                 {t("contact")}
                               </Link>{" "}
+                            </li>
+                            <li>
+                              <Link
+                                to={`${process.env.PUBLIC_URL}/openaccount`}
+                              >
+                                {t("acctopening")}
+                              </Link>
                             </li>
                           </ul>
                         </nav>
