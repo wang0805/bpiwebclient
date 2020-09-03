@@ -6,8 +6,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 
-import { MultiStep } from "../components/Multistep/MultiStep";
-import Step2 from "../components/Multistep/step2";
+import MultiStep from "../components/Multistep/Multistep";
 
 class AcctOpening extends Component {
   constructor() {
@@ -45,7 +44,7 @@ class AcctOpening extends Component {
         <div className="page-wrapper section-space--inner--top--120">
           {/*About section start*/}
           <div className="about-section section-space--inner--bottom--120">
-            <Step2 />
+            <MultiStep />
           </div>
           {/*Acct Open section end*/}
 
