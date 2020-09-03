@@ -5,24 +5,43 @@ import TextField from "@material-ui/core/TextField";
 export const FormFirstStep = (formikProps) => {
   const { errors, touched } = formikProps;
   return (
-    <>
+    <React.Fragment>
       <Field
         name="firstName"
         label="First Name"
         as={TextField}
+        margin="normal"
         error={touched.firstName && errors.firstName}
         helperText={touched.firstName && errors.firstName}
       />
 
-      <Field name="lastName" label="Last Name" as={TextField} />
+      <Field
+        name="lastName"
+        label="Last Name"
+        as={TextField}
+        margin="normal"
+        error={touched.lastName && errors.lastName}
+        helperText={touched.lastName && errors.lastName}
+      />
 
       <Field
         name="mobile"
         label="Mobile"
         as={TextField}
-        error={touched.lastName && errors.lastName}
-        helperText={touched.lastName && errors.lastName}
+        margin="normal"
+        error={touched.mobile && errors.mobile}
+        helperText={touched.mobile && errors.mobile}
       />
-    </>
+
+      <Field
+        type="email"
+        name="email"
+        label="Email Address"
+        margin="normal"
+        as={TextField}
+        error={touched.email && errors.email}
+        helperText={touched.email && errors.email}
+      />
+    </React.Fragment>
   );
 };

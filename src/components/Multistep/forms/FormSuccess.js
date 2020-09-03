@@ -2,14 +2,7 @@ import React from "react";
 import { List, ListItem, ListItemText } from "@material-ui/core/";
 
 export const FormSuccess = (formikProps) => {
-  const {
-    firstName,
-    lastName,
-    email,
-    mobile,
-    city,
-    state,
-  } = formikProps.values;
+  const { firstName, lastName, email, mobile, account } = formikProps.values;
 
   return (
     <>
@@ -28,10 +21,7 @@ export const FormSuccess = (formikProps) => {
             <ListItemText primary="Email" secondary={email} />
           </ListItem>
           <ListItem>
-            <ListItemText primary="City" secondary={city} />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="State" secondary={state} />
+            <ListItemText primary="Account" secondary={account} />
           </ListItem>
         </List>
       </div>

@@ -44,9 +44,7 @@ export default function Step2() {
     lastName: "",
     mobile: "",
     email: "",
-    city: "",
-    state: "",
-    country: "",
+    account: "",
   };
 
   const handleNext = () => {
@@ -84,6 +82,10 @@ export default function Step2() {
       errors.lastName = "Required";
     }
 
+    if (!values.mobile) {
+      errors.mobile = "Required";
+    }
+
     return errors;
   };
 
@@ -115,7 +117,6 @@ export default function Step2() {
               <Form className={classes.form}>
                 {renderStep(activeStep, values, errors, touched)}
                 <div>
-                  <br />
                   <Button
                     disabled={activeStep === 0}
                     onClick={handleBack}

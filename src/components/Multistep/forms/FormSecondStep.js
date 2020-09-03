@@ -1,24 +1,31 @@
 import React from "react";
 import { Field } from "formik";
-import TextField from "@material-ui/core/TextField";
+// import TextField from "@material-ui/core/TextField";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
 
-export const FormSecondStep = formikProps => {
-  const { errors, touched } = formikProps;
+export const FormSecondStep = (formikProps) => {
   return (
-    <>
-      <Field
-        type="email"
-        name="email"
-        label="Email Address"
-        margin="normal"
-        as={TextField}
-        error={touched.email && errors.email}
-        helperText={touched.email && errors.email}
-      />
-
-      <Field name="city" label="City" as={TextField} />
-
-      <Field name="state" label="State" as={TextField} />
-    </>
+    <React.Fragment>
+      <RadioGroup>
+        <label>
+          <Field as={Radio} name="account" value="Individual" />
+          Individual
+        </label>
+        <label>
+          <Field as={Radio} name="account" value="Corporate" />
+          Corporate
+        </label>
+      </RadioGroup>
+    </React.Fragment>
   );
 };
+
+// <label>
+//   <Field type="radio" name="picked" value="One" />
+//   One
+// </label>
+// <label>
+//   <Field type="radio" name="picked" value="Two" />
+//   Two
+// </label>
