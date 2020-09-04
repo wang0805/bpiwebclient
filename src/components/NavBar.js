@@ -121,9 +121,9 @@ class NavBar extends Component {
                         <li className="nav-item">
                           <a
                             className="nav-link"
-                            href={`${process.env.PUBLIC_URL}/contact-us`}
+                            href={`${process.env.PUBLIC_URL}/openaccount`}
                           >
-                            {t("contact")}
+                            {t("acctopening")}
                           </a>
                         </li>
                       </ul>
@@ -357,13 +357,13 @@ class NavBar extends Component {
                                 {t("contact")}
                               </Link>{" "}
                             </li>
-                            <li>
+                            {/* <li>
                               <Link
                                 to={`${process.env.PUBLIC_URL}/openaccount`}
                               >
                                 {t("acctopening")}
                               </Link>
-                            </li>
+                            </li> */}
                           </ul>
                         </nav>
                       </div>

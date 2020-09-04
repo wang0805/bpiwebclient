@@ -6,6 +6,7 @@ export const FormSuccess = (formikProps) => {
 
   return (
     <>
+      <br />
       <div style={{ width: "60%" }}>
         <p style={{ textAlign: "center" }}>
           Thank you {firstName} {lastName} for your interest in opening an

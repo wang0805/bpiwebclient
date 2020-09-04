@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 
 import MultiStep from "../components/Multistep/Multisteps";
+import { withTranslation } from "react-i18next";
 
 class AcctOpening extends Component {
   constructor() {
@@ -15,6 +16,8 @@ class AcctOpening extends Component {
   }
 
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         {/* Navigation bar */}
@@ -27,7 +30,7 @@ class AcctOpening extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>About Us</h1>
+                  <h1>Open New Account</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
@@ -68,4 +71,4 @@ class AcctOpening extends Component {
   }
 }
 
-export default AcctOpening;
+export default withTranslation("translations")(AcctOpening);

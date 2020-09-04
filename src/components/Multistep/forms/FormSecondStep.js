@@ -7,6 +7,11 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 export const FormSecondStep = (formikProps) => {
   return (
     <React.Fragment>
+      <br />
+      <p style={{ textAlign: "center" }}>
+        Please specify if you are opening an individual account or corporate
+        account
+      </p>
       <RadioGroup>
         <label>
           <Field as={Radio} name="account" value="Individual" />

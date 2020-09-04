@@ -22,7 +22,7 @@ const StyledButton = withStyles({
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
+    width: "90%%",
   },
   backButton: {
     marginRight: theme.spacing(1),
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["Personal Particulars", "Type of Account", "Completion"];
+  return ["Personal Particulars", "Account Type", "Completion"];
 }
 
 export default function MultiStep() {
@@ -139,7 +139,7 @@ export default function MultiStep() {
             <Typography className={classes.instructions}>
               Thank you for your submission!
             </Typography>
-            <div style={{ paddingTop: "20px" }}>
+            <div style={{ paddingTop: "40px" }}>
               <StyledButton onClick={handleReset}>Start Again</StyledButton>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function MultiStep() {
             {({ values, errors, touched }) => (
               <Form className={classes.form}>
                 {renderStep(activeStep, values, errors, touched)}
-                <div style={{ paddingTop: "20px" }}>
+                <div style={{ paddingTop: "40px" }}>
                   <StyledButton
                     disabled={activeStep === 0}
                     onClick={handleBack}

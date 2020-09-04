@@ -73,12 +73,10 @@ class MobileMenu extends Component {
               <nav className="offcanvas-navigation" id="offcanvas-navigation">
                 <ul>
                   <li className="menu-item-has-children">
-                    <Link to={`${process.env.PUBLIC_URL}/home-one`}>HOME</Link>
-                    <ul className="sub-menu">
+                    <Link to={`${process.env.PUBLIC_URL}/`}>HOME</Link>
+                    {/* <ul className="sub-menu">
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/home-one`}>
-                          Homepage One
-                        </Link>
+                        <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
                       </li>
                       <li>
                         <Link to={`${process.env.PUBLIC_URL}/home-two`}>
@@ -90,7 +88,7 @@ class MobileMenu extends Component {
                           Homepage Three
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
                     <Link to={`${process.env.PUBLIC_URL}/about-us`}>ABOUT</Link>
@@ -106,10 +104,17 @@ class MobileMenu extends Component {
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          to={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
-                        >
-                          More Services
+                        <Link to={`${process.env.PUBLIC_URL}/clearing`}>
+                          Global Clearing
+                        </Link>
+                        <Link to={`${process.env.PUBLIC_URL}/cfd`}>
+                          Emerging Markets CFD
+                        </Link>
+                        <Link to={`${process.env.PUBLIC_URL}/idb`}>
+                          Inter-Dealer Broking
+                        </Link>
+                        <Link to={`${process.env.PUBLIC_URL}/advisory`}>
+                          Advisory
                         </Link>
                       </li>
                       {/* <li>
@@ -140,6 +145,11 @@ class MobileMenu extends Component {
                   <li>
                     <Link to={`${process.env.PUBLIC_URL}/contact-us`}>
                       CONTACT
+                    </Link>{" "}
+                  </li>
+                  <li>
+                    <Link to={`${process.env.PUBLIC_URL}/openaccount`}>
+                      OPEN NEW ACCOUNT
                     </Link>{" "}
                   </li>
                 </ul>
