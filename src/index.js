@@ -42,11 +42,11 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/`}
             component={HomeOne}
           />
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/home`}
             component={HomeOne}
-          />
+          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/about-us`}
