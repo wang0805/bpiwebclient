@@ -147,7 +147,7 @@ class NavBar extends Component {
                     <div className="header-info-wrapper align-items-center">
                       {/* logo */}
                       <div className="logo">
-                        <Link to={`${process.env.PUBLIC_URL}/home`}>
+                        <Link to={`${process.env.PUBLIC_URL}/`}>
                           <img
                             src="assets/img/logo/bpi_logo.png"
                             className="img-fluid"
@@ -209,7 +209,7 @@ class NavBar extends Component {
                         <nav>
                           <ul>
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/home`}>
+                              <Link to={`${process.env.PUBLIC_URL}/`}>
                                 {" "}
                                 {t("home")}{" "}
                               </Link>
