@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["One", "Two", "Three"];
+  return ["Personal Particulars", "Type of Account", "Completion"];
 }
 
 export default function Step2() {
