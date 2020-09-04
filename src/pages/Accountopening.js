@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 
-import MultiStep from "../components/Multistep/Multistep";
+import MultiStep from "../components/Multistep/Multisteps";
 
 class AcctOpening extends Component {
   constructor() {
