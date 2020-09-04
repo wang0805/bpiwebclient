@@ -54,7 +54,7 @@ function getSteps() {
   return ["Personal Particulars", "Type of Account", "Completion"];
 }
 
-export default function Step2() {
+export default function MultiStep() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
