@@ -10,11 +10,11 @@ export const FormSecondStep = (formikProps) => {
       <RadioGroup>
         <label>
           <Field as={Radio} name="account" value="Individual" />
-          Individual
+          Opening Individual Account
         </label>
         <label>
           <Field as={Radio} name="account" value="Corporate" />
-          Corporate
+          Opening Corporate Account
         </label>
       </RadioGroup>
     </React.Fragment>

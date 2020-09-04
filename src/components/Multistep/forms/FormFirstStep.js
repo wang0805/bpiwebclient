@@ -1,6 +1,7 @@
 import React from "react";
 import { Field } from "formik";
 import TextField from "@material-ui/core/TextField";
+import CustomInput from "../CustomInput";
 
 export const FormFirstStep = (formikProps) => {
   const { errors, touched } = formikProps;
@@ -9,7 +10,7 @@ export const FormFirstStep = (formikProps) => {
       <Field
         name="firstName"
         label="First Name"
-        as={TextField}
+        as={CustomInput}
         margin="normal"
         error={touched.firstName && errors.firstName}
         helperText={touched.firstName && errors.firstName}
@@ -18,7 +19,7 @@ export const FormFirstStep = (formikProps) => {
       <Field
         name="lastName"
         label="Last Name"
-        as={TextField}
+        as={CustomInput}
         margin="normal"
         error={touched.lastName && errors.lastName}
         helperText={touched.lastName && errors.lastName}
@@ -27,7 +28,7 @@ export const FormFirstStep = (formikProps) => {
       <Field
         name="mobile"
         label="Mobile"
-        as={TextField}
+        as={CustomInput}
         margin="normal"
         error={touched.mobile && errors.mobile}
         helperText={touched.mobile && errors.mobile}
@@ -37,8 +38,8 @@ export const FormFirstStep = (formikProps) => {
         type="email"
         name="email"
         label="Email Address"
+        as={CustomInput}
         margin="normal"
-        as={TextField}
         error={touched.email && errors.email}
         helperText={touched.email && errors.email}
       />

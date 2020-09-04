@@ -11,6 +11,8 @@ import { FormFirstStep } from "./forms/FormFirstStep";
 import { FormSecondStep } from "./forms/FormSecondStep";
 import { FormSuccess } from "./forms/FormSuccess";
 
+import { CssBaseline, Container, Grid } from "@material-ui/core";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -75,15 +77,19 @@ export default function Step2() {
   const validate = (values) => {
     const errors = {};
     if (!values.firstName) {
-      errors.firstName = "Required";
+      errors.firstName = "Your First name is required";
     }
 
     if (!values.lastName) {
-      errors.lastName = "Required";
+      errors.lastName = "Your Last name is required";
     }
 
     if (!values.mobile) {
-      errors.mobile = "Required";
+      errors.mobile = "Your Mobile number is required";
+    }
+
+    if (!values.email) {
+      errors.email = "Your Email is required";
     }
 
     return errors;
@@ -100,11 +106,13 @@ export default function Step2() {
       </Stepper>
       <div>
         {activeStep === steps.length ? (
-          <div>
+          <div className={classes.form}>
             <Typography className={classes.instructions}>
-              All steps completed
+              Thank you for your submission!
             </Typography>
-            <Button onClick={handleReset}>Reset</Button>
+            <div style={{ paddingTop: "10px" }}>
+              <Button onClick={handleReset}>Start Again</Button>
+            </div>
           </div>
         ) : (
           <Formik
@@ -116,7 +124,7 @@ export default function Step2() {
             {({ values, errors, touched }) => (
               <Form className={classes.form}>
                 {renderStep(activeStep, values, errors, touched)}
-                <div>
+                <div style={{ paddingTop: "10px" }}>
                   <Button
                     disabled={activeStep === 0}
                     onClick={handleBack}
@@ -124,6 +132,7 @@ export default function Step2() {
                   >
                     Back
                   </Button>
+
                   <Button variant="contained" color="primary" type="submit">
                     {activeStep === steps.length - 1 ? "Finish" : "Next"}
                   </Button>
