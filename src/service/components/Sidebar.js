@@ -3,28 +3,8 @@ import brochure from "../../../public/assets/pdf/brochure.pdf";
 
 class Sidebar extends Component {
   render() {
-    let data = [
-      {
-        sidebarListLink: "service-details-left-sidebar",
-        sidebarListIcon: "flaticon-015-cart",
-        sidebarListText: "Global Clearing Services",
-      },
-      {
-        sidebarListLink: "service-details-left-sidebar",
-        sidebarListIcon: "flaticon-010-tank-1",
-        sidebarListText: "Emerging Markets CFD",
-      },
-      {
-        sidebarListLink: "service-details-left-sidebar",
-        sidebarListIcon: "flaticon-002-welding",
-        sidebarListText: "Inter-Dealer Broker",
-      },
-      {
-        sidebarListLink: "service-details-left-sidebar",
-        sidebarListIcon: "flaticon-004-walkie-talkie",
-        sidebarListText: "Advisory",
-      },
-    ];
+    const { data } = this.props;
+    console.log(data);
 
     let Datalist = data.map((val, i) => {
       return (

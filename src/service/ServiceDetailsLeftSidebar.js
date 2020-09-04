@@ -7,6 +7,28 @@ import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 class ServiceDetailsLeftSidebar extends Component {
   render() {
+    let service_obj = [
+      {
+        sidebarListLink: "service-details-left-sidebar",
+        sidebarListIcon: "flaticon-015-cart",
+        sidebarListText: "Global Clearing Services",
+      },
+      {
+        sidebarListLink: "service-details-left-sidebar",
+        sidebarListIcon: "flaticon-010-tank-1",
+        sidebarListText: "Emerging Markets CFD",
+      },
+      {
+        sidebarListLink: "service-details-left-sidebar",
+        sidebarListIcon: "flaticon-002-welding",
+        sidebarListText: "Inter-Dealer Broker",
+      },
+      {
+        sidebarListLink: "service-details-left-sidebar",
+        sidebarListIcon: "flaticon-004-walkie-talkie",
+        sidebarListText: "Advisory",
+      },
+    ];
     return (
       <div>
         {/* Navigation bar */}
@@ -95,7 +117,7 @@ class ServiceDetailsLeftSidebar extends Component {
                   </div>
                 </div>
                 <div className="col-lg-4 col-12 order-2 order-lg-1">
-                  <Sidebar />
+                  <Sidebar data={service_obj} />
                 </div>
               </div>
             </div>

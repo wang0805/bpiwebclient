@@ -128,7 +128,7 @@ class Footer extends Component {
                               <span>P:</span>+65 6499 0618
                             </li>
                             <li>
-                              <span>E:</span>Clearing@bpifinancial.com
+                              <span>E:</span>Sales@bpifinancial.com
                             </li>
                           </ul>
                         </div>
