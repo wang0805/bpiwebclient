@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
@@ -11,7 +12,13 @@ import { FormFirstStep } from "./forms/FormFirstStep";
 import { FormSecondStep } from "./forms/FormSecondStep";
 import { FormSuccess } from "./forms/FormSuccess";
 
-import { CssBaseline, Container, Grid } from "@material-ui/core";
+const StyledButton = withStyles({
+  root: {
+    color: "white",
+    backgroundColor: "#f0542e",
+  },
+  disabled: { color: "Grey", backgroundColor: "#e4e4e4" },
+})(Button);
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +37,17 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
+  icon: {
+    color: "#f0542e",
+    "&$activeIcon": {
+      color: "#f0542e",
+    },
+    "&$completedIcon": {
+      color: "#f0542e",
+    },
+  },
+  activeIcon: {},
+  completedIcon: {},
 }));
 
 function getSteps() {
@@ -100,18 +118,29 @@ export default function Step2() {
       <Stepper activeStep={activeStep} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+            <StepLabel
+              StepIconProps={{
+                classes: {
+                  root: classes.icon,
+                  active: classes.activeIcon,
+                  completed: classes.completedIcon,
+                },
+              }}
+            >
+              {label}
+            </StepLabel>
           </Step>
         ))}
       </Stepper>
+
       <div>
         {activeStep === steps.length ? (
           <div className={classes.form}>
             <Typography className={classes.instructions}>
               Thank you for your submission!
             </Typography>
-            <div style={{ paddingTop: "10px" }}>
-              <Button onClick={handleReset}>Start Again</Button>
+            <div style={{ paddingTop: "20px" }}>
+              <StyledButton onClick={handleReset}>Start Again</StyledButton>
             </div>
           </div>
         ) : (
@@ -124,18 +153,18 @@ export default function Step2() {
             {({ values, errors, touched }) => (
               <Form className={classes.form}>
                 {renderStep(activeStep, values, errors, touched)}
-                <div style={{ paddingTop: "10px" }}>
-                  <Button
+                <div style={{ paddingTop: "20px" }}>
+                  <StyledButton
                     disabled={activeStep === 0}
                     onClick={handleBack}
                     className={classes.backButton}
                   >
                     Back
-                  </Button>
+                  </StyledButton>
 
-                  <Button variant="contained" color="primary" type="submit">
+                  <StyledButton variant="contained" type="submit">
                     {activeStep === steps.length - 1 ? "Finish" : "Next"}
-                  </Button>
+                  </StyledButton>
                 </div>
               </Form>
             )}
