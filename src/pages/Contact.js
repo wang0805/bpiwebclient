@@ -103,7 +103,7 @@ class Contact extends Component {
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
                     <form
-                      name="contact"
+                      name="contact-form"
                       id="contact-form"
                       method="POST"
                       data-netlify-recaptcha="true"
@@ -111,12 +111,7 @@ class Contact extends Component {
                       data-netlify="true"
                     >
                       {/* luring of bot */}
-                      <div class="hidden">
-                        <label>
-                          Don’t fill this out if you're human:{" "}
-                          <input name="bot-field" />
-                        </label>
-                      </div>
+                      <input type="hidden" name="bot-field" />
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
