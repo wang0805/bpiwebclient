@@ -42,7 +42,7 @@ class Cfd extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Emergy Markets CFD</h1>
+                  <h1>Emerging Markets CFD</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
@@ -74,45 +74,43 @@ class Cfd extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Global Clearing Services</h2>
+                          <h2>Emerging Markets CFDs</h2>
                           <p>
-                            BPIFG provides market trading access and clearing
-                            services for global derivative markets across all
-                            developed Exchanges around the world and asset
-                            classes
+                            We support trading into Emerging Markets Derivatives
+                            which are not easily accessible by the global
+                            participants
                           </p>
                           <p>
-                            We are also able to provide clearing services for
-                            Internationalized derivatives from Chinese Exchanges
-                            such as Dalian Commodity Exchange cleared Iron ore,
-                            and all Shanghai International Energy Exchange
-                            cleared commodity derivatives
+                            Our products offerings right now includes all
+                            Commodities Derivatives (both Futures and Options)
+                            that are currently listed on regulated Chinese
+                            Exchanges
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>
-                            Access to Emerging Markets Derivatives via CFD
-                          </h3>
-                          <p>
-                            BPIF also provides Electronic Trading Access to
-                            Chinese Exchanges cleared commodity derivatives. On
-                            top of internationalized products, we are also able
-                            to clear all other derivatives via the CFD
-                            instrument
-                          </p>
+                          <h3>Software</h3>
+                          <ul>
+                            <li>ATPlatform Technology Limited</li>
+                            <li>
+                              ATP is able to provide cost-effective Spreader and
+                              AutoTrader functions for traders doing onshore vs
+                              offshore trading strategies
+                            </li>
+                          </ul>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Inder-Dealer Broker</h3>
-                          <p>
-                            BPIFG acts as an intermediary for mainly but not
-                            limited to SGX cleared Iron Ore (Platts 62%, MB 65%,
-                            LP) and Coking Coal derivatives
-                          </p>
+                          <h3>FAQs</h3>
+                          <ul>
+                            <li>
+                              Click on the Open New Account tab to obtain a
+                              secure link via email for account opening forms
+                            </li>
+                          </ul>
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Advisory</h3>
                           <p>Hedging solutions</p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

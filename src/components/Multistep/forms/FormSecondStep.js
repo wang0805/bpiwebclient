@@ -8,26 +8,26 @@ export const FormSecondStep = (formikProps) => {
   return (
     <React.Fragment>
       <br />
-      <p style={{ textAlign: "center" }}>
-        Please specify if you are opening an individual account or corporate
-        account
+
+      <p style={{ width: "70%", textAlign: "center" }}>
+        Please specify the type of account that you would like to open
       </p>
       <RadioGroup>
         <label>
           <Field as={Radio} name="account" value="Individual" />
-          Opening Individual Account
+          Individual Account
         </label>
         <label>
           <Field as={Radio} name="account" value="Corporate" />
-          Opening Corporate Account
+          Corporate Account
         </label>
         <label>
           <Field as={Radio} name="account" value="Corporate CFD" />
-          Opening Corporate CFD Account
+          Corporate CFD Account
         </label>
         <label>
           <Field as={Radio} name="account" value="IDB" />
-          Opening IDB Account
+          IDB Account
         </label>
       </RadioGroup>
     </React.Fragment>
