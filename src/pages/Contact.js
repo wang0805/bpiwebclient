@@ -108,6 +108,8 @@ class Contact extends Component {
                       data-netlify="true"
                       data-netlify-honeypot="bot-field"
                     >
+                      {/* luring of bot */}
+                      <input type="hidden" name="bot-field" />
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
