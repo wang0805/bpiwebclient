@@ -15,7 +15,7 @@ import HomeOne from "./HomeOne";
 import About from "./pages/About";
 import AcctOpening from "./pages/Accountopening";
 import Services from "./service/Services";
-import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
+// import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
 import Clearing from "./service/Clearing";
 import Cfd from "./service/Cfd";
 import Idb from "./service/Idb";

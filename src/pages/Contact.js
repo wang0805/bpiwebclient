@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import NetlifyForm from "react-netlify-form";
 
 // const encode = (data) => {
 //   return Object.keys(data)
@@ -11,7 +10,7 @@ import NetlifyForm from "react-netlify-form";
 // };
 
 class Contact extends Component {
-  state = { name: "", email: "", message: "" };
+  // state = { name: "", email: "", message: "" };
 
   // handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
@@ -128,9 +127,9 @@ class Contact extends Component {
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
                     <form
-                      name="contact-form"
-                      // id="contact-form"
-                      method="POST"
+                      name="contactform"
+                      id="contact-form"
+                      method="post"
                       data-netlify-recaptcha="true"
                       data-netlify-honeypot="bot-field"
                       data-netlify="true"
@@ -167,27 +166,6 @@ class Contact extends Component {
                         </div>
                       </div>
                     </form>
-                    <NetlifyForm name="Contact Form">
-                      {({ loading, error, success }) => (
-                        <div>
-                          {loading && <div>Loading...</div>}
-                          {error && (
-                            <div>
-                              Your information was not sent. Please try again
-                              later.
-                            </div>
-                          )}
-                          {success && <div>Thank you for contacting us!</div>}
-                          {!loading && !success && (
-                            <div>
-                              <input type="text" name="Name" required />
-                              <textarea name="Message" required />
-                              <button>Submit</button>
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </NetlifyForm>
                   </div>
                 </div>
               </div>
