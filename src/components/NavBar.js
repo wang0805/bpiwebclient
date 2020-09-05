@@ -277,13 +277,13 @@ class NavBar extends Component {
                                     Inter-Dealer Broking
                                   </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/advisory`}
                                   >
                                     Advisory
                                   </Link>
-                                </li>
+                                </li> */}
 
                                 {/* <li>
                                   <Link

@@ -57,11 +57,11 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/services`}
             component={Services}
           />
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
             component={ServiceDetailsLeftSidebar}
-          />
+          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/clearing`}

@@ -10,12 +10,12 @@ class Idb extends Component {
   render() {
     let service_obj = [
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "idb",
         sidebarListIcon: "flaticon-015-cart",
         sidebarListText: "Products",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "openaccount",
         sidebarListIcon: "flaticon-004-walkie-talkie",
         sidebarListText: "Open New Account",
       },
@@ -33,7 +33,7 @@ class Idb extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Service Details</h1>
+                  <h1>Inter-Dealer Broking</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
@@ -43,7 +43,7 @@ class Idb extends Component {
                         Services
                       </a>
                     </li>
-                    <li>Service Details</li>
+                    <li>Inter-Dealer Broking</li>
                   </ul>
                 </div>
               </div>

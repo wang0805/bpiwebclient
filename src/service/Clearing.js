@@ -10,22 +10,22 @@ class Clearing extends Component {
   render() {
     let service_obj = [
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "clearing",
         sidebarListIcon: "flaticon-015-cart",
         sidebarListText: "Products",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "clearing",
         sidebarListIcon: "flaticon-010-tank-1",
         sidebarListText: "Software",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "clearing",
         sidebarListIcon: "flaticon-002-welding",
         sidebarListText: "FAQs",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "openaccount",
         sidebarListIcon: "flaticon-004-walkie-talkie",
         sidebarListText: "Open New Account",
       },

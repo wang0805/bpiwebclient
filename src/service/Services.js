@@ -33,14 +33,14 @@ class Services extends Component {
         serviceSubtitle:
           "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
       },
-      {
-        pageLink: "advisory",
-        img: "service-3.jpg",
-        iconClass: "flaticon-010-tank-1",
-        serviceTitle: "Advisory",
-        serviceSubtitle:
-          "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
-      },
+      // {
+      //   pageLink: "advisory",
+      //   img: "service-3.jpg",
+      //   iconClass: "flaticon-010-tank-1",
+      //   serviceTitle: "Advisory",
+      //   serviceSubtitle:
+      //     "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
+      // },
       //   {
       //     pageLink: "service-details-left-sidebar",
       //     img: "service-2.jpg",

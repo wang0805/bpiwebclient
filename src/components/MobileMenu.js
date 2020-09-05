@@ -113,9 +113,9 @@ class MobileMenu extends Component {
                         <Link to={`${process.env.PUBLIC_URL}/idb`}>
                           Inter-Dealer Broking
                         </Link>
-                        <Link to={`${process.env.PUBLIC_URL}/advisory`}>
+                        {/* <Link to={`${process.env.PUBLIC_URL}/advisory`}>
                           Advisory
-                        </Link>
+                        </Link> */}
                       </li>
                       {/* <li>
                         <Link
