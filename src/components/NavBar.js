@@ -152,6 +152,7 @@ class NavBar extends Component {
                             src="assets/img/logo/bpi_logo.png"
                             className="img-fluid"
                             alt="Logo"
+                            width="110"
                           />
                         </Link>
                       </div>
