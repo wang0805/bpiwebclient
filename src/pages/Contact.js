@@ -126,7 +126,14 @@ class Contact extends Component {
                 <div className="col-lg-8 col-12">
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
-                    <form name="contactform" id="contact-form" method="post">
+                    <form
+                      name="contactform"
+                      id="contact-form"
+                      method="post"
+                      data-netlify="true"
+                      netlify-honeypot="bot-field"
+                      data-netlify-recaptcha="true"
+                    >
                       <input type="hidden" name="form-name" value="contact" />
                       {/* luring of bot */}
                       <input type="hidden" name="bot-field" />
