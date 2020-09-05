@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import NetlifyForm from "react-netlify-form";
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
+// const encode = (data) => {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//     .join("&");
+// };
 
 class Contact extends Component {
   state = { name: "", email: "", message: "" };
@@ -166,6 +167,27 @@ class Contact extends Component {
                         </div>
                       </div>
                     </form>
+                    <NetlifyForm name="Contact Form">
+                      {({ loading, error, success }) => (
+                        <div>
+                          {loading && <div>Loading...</div>}
+                          {error && (
+                            <div>
+                              Your information was not sent. Please try again
+                              later.
+                            </div>
+                          )}
+                          {success && <div>Thank you for contacting us!</div>}
+                          {!loading && !success && (
+                            <div>
+                              <input type="text" name="Name" required />
+                              <textarea name="Message" required />
+                              <button>Submit</button>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </NetlifyForm>
                   </div>
                 </div>
               </div>
