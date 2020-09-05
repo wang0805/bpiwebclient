@@ -33,21 +33,21 @@ class HeroSliderOne extends Component {
 
     let data = [
       {
-        bgImg: "slider3.jpg",
+        bgImg: "slider3.png",
         sliderTitle: "Welcome",
         sliderSubtitle:
           "One stop shop in Global Market Access and Trading solutions",
         btnLink: "openaccount",
       },
       {
-        bgImg: "slider2.jpg",
+        bgImg: "slider2.png",
         sliderTitle: "Welcome",
         sliderSubtitle:
           "Electronic Trading Access into Chinese Exchange cleared commodity derivatives for onshore offshore arbitrage strategies",
         btnLink: "openaccount",
       },
       {
-        bgImg: "slider1.jpg",
+        bgImg: "slider1.png",
         sliderTitle: "Welcome",
         sliderSubtitle: "Advisory, Research Analysis and Hedging solutions",
         btnLink: "openaccount",
