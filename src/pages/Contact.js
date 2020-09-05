@@ -90,7 +90,7 @@ class Contact extends Component {
                           <i className="ion-ios-email-outline" />
                         </span>
                         <span className="text">
-                          <a href="mailto:Clearing@bpifinancial.com">
+                          <a href="mailto:sales@bpifinancial.com">
                             Clearing@bpifinancial.com Sales@bpifinancial.com
                           </a>
                           {/* <a href="mailto:info@example.com">info@example.com</a> */}
@@ -102,7 +102,12 @@ class Contact extends Component {
                 <div className="col-lg-8 col-12">
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
-                    <form id="contact-form">
+                    <form
+                      id="contact-form"
+                      method="POST"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                    >
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
@@ -126,7 +131,10 @@ class Contact extends Component {
                           />
                         </div>
                         <div className="col-12">
-                          <button>Send Message</button>
+                          <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <div className="col-12">
+                          <button type="submit">Send Message</button>
                         </div>
                       </div>
                     </form>

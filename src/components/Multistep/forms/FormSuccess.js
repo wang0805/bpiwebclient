@@ -1,5 +1,5 @@
 import React from "react";
-import { List, ListItem, ListItemText } from "@material-ui/core/";
+// import { List, ListItem, ListItemText } from "@material-ui/core/";
 
 export const FormSuccess = (formikProps) => {
   const { firstName, lastName, email, mobile, account } = formikProps.values;
@@ -10,15 +10,15 @@ export const FormSuccess = (formikProps) => {
       <div style={{ width: "60%" }}>
         <p style={{ textAlign: "center" }}>
           Thank you {firstName} {lastName} for your interest in opening an
-          account with us!
+          {account} account with us!
         </p>
         <p style={{ textAlign: "center" }}>
-          Please go to your inbox for opening of an {account} where you should
-          receive a link to fill in the account opening form online
+          Please go to your inbox where you should receive a link to fill up the
+          account opening form securely online
         </p>
         <p style={{ textAlign: "center" }}>
-          Do feel free to reach us on our direct line should you face any
-          problems or would like to speak to one of our sales staff, thank you
+          Do feel free to contact us if you require any assistance or if you
+          want to speak to a sales staff
         </p>
         {/* <List>
           <ListItem>
