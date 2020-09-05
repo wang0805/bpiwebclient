@@ -12,19 +12,19 @@ const encode = (data) => {
 class Contact extends Component {
   state = { name: "", email: "", message: "" };
 
-  handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
+  // handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-form", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+  // handleSubmit = (e) => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact-form", ...this.state }),
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch((error) => alert(error));
 
-    e.preventDefault();
-  };
+  //   e.preventDefault();
+  // };
 
   render() {
     let gourl = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ60V1YBMZ2jER5-Hqxiv_iss&key=${process.env.REACT_APP_GOOGLE_API}`;
@@ -128,12 +128,11 @@ class Contact extends Component {
                     <h3>Leave Your Message</h3>
                     <form
                       name="contact-form"
-                      id="contact-form"
+                      // id="contact-form"
                       method="POST"
                       data-netlify-recaptcha="true"
                       data-netlify-honeypot="bot-field"
                       data-netlify="true"
-                      onsubmit={this.handleSubmit}
                     >
                       {/* luring of bot */}
                       <input type="hidden" name="bot-field" />
@@ -143,7 +142,6 @@ class Contact extends Component {
                             name="con_name"
                             type="text"
                             placeholder="Your Name"
-                            onChange={this.handleChange}
                           />
                         </div>
                         <div className="col-md-6 col-12 section-space--bottom--20">
@@ -151,7 +149,6 @@ class Contact extends Component {
                             name="con_email"
                             type="email"
                             placeholder="Your Email"
-                            onChange={this.handleChange}
                           />
                         </div>
                         <div className="col-12">
@@ -159,7 +156,6 @@ class Contact extends Component {
                             name="con_message"
                             placeholder="Your Message"
                             defaultValue={""}
-                            onChange={this.handleChange}
                           />
                         </div>
                         <div className="col-12">
