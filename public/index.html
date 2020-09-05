@@ -25,12 +25,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <!-- for netlify form to work -->
-    <form
-      name="contact-form"
-      data-netlify="true"
-      data-netlify-recaptcha="true"
-      hidden
-    >
+    <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="con_name" />
       <input type="email" name="con_email" />
       <textarea name="con_message"></textarea>

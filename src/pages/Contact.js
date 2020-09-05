@@ -156,9 +156,6 @@ class Contact extends Component {
                           />
                         </div>
                         <div className="col-12">
-                          <div data-netlify-recaptcha="true"></div>
-                        </div>
-                        <div className="col-12">
                           <button type="submit">Send Message</button>
                         </div>
                       </div>
