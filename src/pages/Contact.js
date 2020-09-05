@@ -106,12 +106,12 @@ class Contact extends Component {
                       name="contact-form"
                       id="contact-form"
                       method="POST"
-                      data-netlify-recaptcha="true"
-                      data-netlify-honeypot="bot-field"
+                      // data-netlify-recaptcha="true"
+                      // data-netlify-honeypot="bot-field"
                       data-netlify="true"
                     >
                       {/* luring of bot */}
-                      <input type="hidden" name="bot-field" />
+                      {/* <input type="hidden" name="bot-field" /> */}
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
@@ -134,9 +134,9 @@ class Contact extends Component {
                             defaultValue={""}
                           />
                         </div>
-                        <div className="col-12">
+                        {/* <div className="col-12">
                           <div data-netlify-recaptcha="true"></div>
-                        </div>
+                        </div> */}
                         <div className="col-12">
                           <button type="submit">Send Message</button>
                         </div>
