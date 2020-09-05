@@ -58,9 +58,8 @@ class Footer extends Component {
                           </a>
                         </div>
                         <div className="footer-desc">
-                          Lorem ipsum dolor sit amet consect adipisici elit, sed
-                          do eiusmod tempor incididuk ut labore et dolore magna
-                          aliqua Ut enim
+                          Welcome to Bright Point International Financial Group
+                          Limited
                         </div>
                       </div>
                     </div>
@@ -72,14 +71,19 @@ class Footer extends Component {
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>Home</a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>
                               Company News
                             </a>
-                          </li>
+                          </li> */}
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>
                               Contact Us
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${process.env.PUBLIC_URL}/openaccount`}>
+                              Open New Account
                             </a>
                           </li>
                         </ul>
@@ -91,16 +95,16 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.PUBLIC_URL}/services`}>
                               Our Services
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>Showcase</a>
                           </li>
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>Affliates</a>
-                          </li>
+                          </li> */}
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>
                               Disclaimer
@@ -141,7 +145,7 @@ class Footer extends Component {
           </div>
           <div className="footer-copyright-wrapper">
             <div className="footer-copyright text-center">
-              Copyright © 2019. All right reserved
+              Copyright © 2020, all right reserved. Edited by Wang Wenhao
             </div>
           </div>
         </div>

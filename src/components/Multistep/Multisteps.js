@@ -136,6 +136,7 @@ export default function MultiStep() {
       <div>
         {activeStep === steps.length ? (
           <div className={classes.form}>
+            <br />
             <Typography className={classes.instructions}>
               Thank you for your submission!
             </Typography>
