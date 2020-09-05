@@ -25,6 +25,10 @@ export const FormSecondStep = (formikProps) => {
           <Field as={Radio} name="account" value="Corporate CFD" />
           Opening Corporate CFD Account
         </label>
+        <label>
+          <Field as={Radio} name="account" value="IDB" />
+          Opening IDB Account
+        </label>
       </RadioGroup>
     </React.Fragment>
   );

@@ -9,7 +9,7 @@ export const FormSuccess = (formikProps) => {
       <br />
       <div style={{ width: "60%" }}>
         <p style={{ textAlign: "center" }}>
-          Thank you {firstName} {lastName} for your interest in opening an
+          Thank you {firstName} {lastName} for your interest in opening an{" "}
           {account} account with us!
         </p>
         <p style={{ textAlign: "center" }}>

@@ -10,22 +10,22 @@ class Cfd extends Component {
   render() {
     let service_obj = [
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "cfd",
         sidebarListIcon: "flaticon-015-cart",
         sidebarListText: "Products",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "cfd",
         sidebarListIcon: "flaticon-010-tank-1",
         sidebarListText: "Software",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "cfd",
         sidebarListIcon: "flaticon-002-welding",
         sidebarListText: "FAQs",
       },
       {
-        sidebarListLink: "service-details-left-sidebar",
+        sidebarListLink: "openaccount",
         sidebarListIcon: "flaticon-004-walkie-talkie",
         sidebarListText: "Open New Account",
       },
@@ -42,7 +42,7 @@ class Cfd extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Service Details</h1>
+                  <h1>Emergy Markets CFD</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
@@ -52,7 +52,7 @@ class Cfd extends Component {
                         Services
                       </a>
                     </li>
-                    <li>Service Details</li>
+                    <li>Emerging Markets CFDs</li>
                   </ul>
                 </div>
               </div>
