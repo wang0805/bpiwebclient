@@ -106,6 +106,7 @@ class Contact extends Component {
                       id="contact-form"
                       method="POST"
                       data-netlify="true"
+                      data-netlify-recaptcha="true"
                       data-netlify-honeypot="bot-field"
                     >
                       {/* luring of bot */}
