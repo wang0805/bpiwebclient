@@ -103,6 +103,7 @@ class Contact extends Component {
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
                     <form
+                      name="contact"
                       id="contact-form"
                       method="POST"
                       data-netlify-recaptcha="true"
