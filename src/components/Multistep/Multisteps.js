@@ -16,13 +16,21 @@ const StyledButton = withStyles({
   root: {
     color: "white",
     backgroundColor: "#f0542e",
+    "&:hover": {
+      backgroundColor: "black",
+    },
+    fontSize: "14px",
+    padding: "10px 40px",
+
+    borderRadius: 0,
+    lineHeight: 2,
   },
   disabled: { color: "Grey", backgroundColor: "#e4e4e4" },
 })(Button);
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "90%%",
+    width: "100%",
   },
   backButton: {
     marginRight: theme.spacing(1),
@@ -69,6 +77,9 @@ export default function MultiStep() {
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    if (activeStep === 1) {
+      console.log("send email at 1!");
+    }
   };
 
   const handleBack = () => {
@@ -160,11 +171,11 @@ export default function MultiStep() {
                     onClick={handleBack}
                     className={classes.backButton}
                   >
-                    Back
+                    BACK
                   </StyledButton>
 
                   <StyledButton variant="contained" type="submit">
-                    {activeStep === steps.length - 1 ? "Finish" : "Next"}
+                    {activeStep === steps.length - 1 ? "FINISH" : "NEXT"}
                   </StyledButton>
                 </div>
               </Form>

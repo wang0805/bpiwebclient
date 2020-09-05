@@ -65,44 +65,14 @@ class Idb extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Global Clearing Services</h2>
-                          <p>
-                            BPIFG provides market trading access and clearing
-                            services for global derivative markets across all
-                            developed Exchanges around the world and asset
-                            classes
-                          </p>
-                          <p>
-                            We are also able to provide clearing services for
-                            Internationalized derivatives from Chinese Exchanges
-                            such as Dalian Commodity Exchange cleared Iron ore,
-                            and all Shanghai International Energy Exchange
-                            cleared commodity derivatives
-                          </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>
-                            Access to Emerging Markets Derivatives via CFD
-                          </h3>
-                          <p>
-                            BPIF also provides Electronic Trading Access to
-                            Chinese Exchanges cleared commodity derivatives. On
-                            top of internationalized products, we are also able
-                            to clear all other derivatives via the CFD
-                            instrument
-                          </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Inder-Dealer Broker</h3>
+                          <h2>Inter-Dealer Broking</h2>
                           <p>
                             BPIFG acts as an intermediary for mainly but not
-                            limited to SGX cleared Iron Ore (Platts 62%, MB 65%,
-                            LP) and Coking Coal derivatives
+                            limited to SGX cleared Iron Ore (Platts 62% Index,
+                            MB 65% Index, Lump Premium), EEX and SGX cleared
+                            Forward Freight Agreements (FFA) as well as CME and
+                            SGX cleared Coking Coal derivatives
                           </p>
-                        </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Advisory</h3>
-                          <p>Hedging solutions</p>
                         </div>
                       </div>
                     </div>
