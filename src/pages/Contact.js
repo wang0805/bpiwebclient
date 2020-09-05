@@ -126,14 +126,12 @@ class Contact extends Component {
                 <div className="col-lg-8 col-12">
                   <div className="contact-form">
                     <h3>Leave Your Message</h3>
-                    <form
-                      name="contactform"
-                      id="contact-form"
-                      method="post"
-                      data-netlify="true"
-                      data-netlify-recaptcha="true"
-                    >
-                      <input type="hidden" name="form-name" value="contact" />
+                    <form name="contact-form" id="contact-form" method="post">
+                      <input
+                        type="hidden"
+                        name="form-name"
+                        value="contact-form"
+                      />
 
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
