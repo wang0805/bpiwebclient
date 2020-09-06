@@ -149,7 +149,7 @@ class MobileMenu extends Component {
                   </li>
                   <li>
                     <Link to={`${process.env.PUBLIC_URL}/openaccount`}>
-                      OPEN NEW ACCOUNT
+                      OPEN ACCOUNT
                     </Link>{" "}
                   </li>
                 </ul>
@@ -176,9 +176,9 @@ class MobileMenu extends Component {
                   <a href="#/" title="Facebook">
                     <i className="fa fa-facebook" />
                   </a>
-                  <a href="#/" title="Twitter">
+                  {/* <a href="#/" title="Twitter">
                     <i className="fa fa-twitter" />
-                  </a>
+                  </a> */}
                   <a href="#/" title="LinkedIn">
                     <i className="fa fa-linkedin" />
                   </a>
