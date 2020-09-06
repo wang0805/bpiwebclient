@@ -35,7 +35,7 @@ class AcctOpening extends Component {
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>Open an Account</li>
+                    <li>Open New Account</li>
                   </ul>
                 </div>
               </div>
