@@ -15,7 +15,7 @@ import { FormSuccess } from "./forms/FormSuccess";
 const StyledButton = withStyles({
   root: {
     color: "white",
-    backgroundColor: "#f0542e",
+    backgroundColor: "#9e1e16",
     "&:hover": {
       backgroundColor: "black",
     },
@@ -46,12 +46,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   icon: {
-    color: "#f0542e",
+    // color: "#f0542e",
+    color: "#9e1e16",
     "&$activeIcon": {
-      color: "#f0542e",
+      color: "#9e1e16",
     },
     "&$completedIcon": {
-      color: "#f0542e",
+      color: "#9e1e16",
     },
   },
   activeIcon: {},
