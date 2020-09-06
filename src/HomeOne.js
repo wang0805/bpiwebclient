@@ -23,14 +23,14 @@ class HomeOne extends Component {
         {/* Hero slider */}
         <HeroSliderOne />
 
-        {/* Service grid slider */}
-        <ServiceTab />
-
         {/* Fun fact */}
         {/* <Funfact /> */}
 
         {/* Video CTA */}
         <VideoCta />
+
+        {/* Service grid slider */}
+        <ServiceTab />
 
         {/* Project Slider */}
         {/* <ProjectSlider /> */}
