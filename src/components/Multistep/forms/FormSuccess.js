@@ -18,7 +18,7 @@ export const FormSuccess = (formikProps) => {
         </p>
         <p style={{ textAlign: "center" }}>
           Do feel free to contact us if you require any assistance or if you
-          want to speak to a sales staff
+          would like to speak to a sales personnel
         </p>
         {/* <List>
           <ListItem>
