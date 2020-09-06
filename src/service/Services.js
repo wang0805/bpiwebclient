@@ -116,7 +116,7 @@ class Services extends Component {
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>Service</li>
+                    <li>Services</li>
                   </ul>
                 </div>
               </div>
