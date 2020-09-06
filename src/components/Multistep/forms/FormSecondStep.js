@@ -8,9 +8,8 @@ export const FormSecondStep = (formikProps) => {
   return (
     <React.Fragment>
       <br />
-
-      <p style={{ width: "70%", textAlign: "center" }}>
-        Please specify the type of account that you would like to open
+      <p style={{ width: "80%", textAlign: "center" }}>
+        Please Specify the Type of Account*
       </p>
       <RadioGroup>
         <label>

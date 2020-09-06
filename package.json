@@ -75,7 +75,9 @@
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.2.0",
-    "yup": "^0.28.3"
+    "yup": "^0.28.3",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2"
   },
   "scripts": {
     "start": "node scripts/start.js",

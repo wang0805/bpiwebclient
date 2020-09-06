@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["Personal Particulars", "Account Type", "Completion"];
+  return ["Particulars", "Account", "Complete"];
 }
 
 export default function MultiStep() {
@@ -71,6 +71,7 @@ export default function MultiStep() {
   const formData = {
     firstName: "",
     lastName: "",
+    country: "",
     mobile: "",
     email: "",
     account: "",

@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 
 import MultiStep from "../components/Multistep/Multisteps";
+import Layout from "../components/Multistep/Layout";
+
 import { withTranslation } from "react-i18next";
 
 class AcctOpening extends Component {
@@ -45,9 +47,11 @@ class AcctOpening extends Component {
         {/*====================  End of breadcrumb area  ====================*/}
 
         <div className="page-wrapper section-space--inner--top--120">
-          {/*About section start*/}
+          {/*Account opening section start*/}
           <div className="about-section section-space--inner--bottom--120">
-            <MultiStep />
+            <Layout>
+              <MultiStep />
+            </Layout>
           </div>
           {/*Acct Open section end*/}
 
