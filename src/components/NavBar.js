@@ -71,7 +71,7 @@ class NavBar extends Component {
                               <i className="zmdi zmdi-facebook" />
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="//twitter.com">
                               <i className="zmdi zmdi-twitter" />
                             </a>
@@ -80,17 +80,17 @@ class NavBar extends Component {
                             <a href="//vimeo.com">
                               <i className="zmdi zmdi-vimeo" />
                             </a>
-                          </li>
+                          </li> */}
                           <li>
                             <a href="//linkedin.com">
                               <i className="zmdi zmdi-linkedin-box" />
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="//skype.com">
                               <i className="zmdi zmdi-skype" />
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -99,6 +99,14 @@ class NavBar extends Component {
                     {/* top bar right */}
                     <div className="top-bar-right-wrapper">
                       <ul className="nav justify-content-end">
+                        {/* <li className="nav-item">
+                          <a
+                            className="nav-link"
+                            href={`${process.env.PUBLIC_URL}/openaccount`}
+                          >
+                            {t("acctopening")}
+                          </a>
+                        </li> */}
                         <li className="nav-item">
                           <a
                             active
@@ -116,14 +124,6 @@ class NavBar extends Component {
                             onClick={() => this.handleClick("ch")}
                           >
                             中文
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a
-                            className="nav-link"
-                            href={`${process.env.PUBLIC_URL}/openaccount`}
-                          >
-                            {t("acctopening")}
                           </a>
                         </li>
                       </ul>
@@ -358,13 +358,13 @@ class NavBar extends Component {
                                 {t("contact")}
                               </Link>{" "}
                             </li>
-                            {/* <li>
+                            <li>
                               <Link
                                 to={`${process.env.PUBLIC_URL}/openaccount`}
                               >
                                 {t("acctopening")}
                               </Link>
-                            </li> */}
+                            </li>
                           </ul>
                         </nav>
                       </div>

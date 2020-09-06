@@ -75,15 +75,15 @@ class TeamMemberGrid extends Component {
                 <a href={val.socialLinks.facebook} className="facebook">
                   <i className="fa fa-facebook" />
                 </a>
-                <a href={val.socialLinks.twitter} className="twitter">
+                {/* <a href={val.socialLinks.twitter} className="twitter">
                   <i className="fa fa-twitter" />
-                </a>
+                </a> */}
                 <a href={val.socialLinks.linkedin} className="linkedin">
                   <i className="fa fa-linkedin" />
                 </a>
-                <a href={val.socialLinks.googlePlus} className="google">
+                {/* <a href={val.socialLinks.googlePlus} className="google">
                   <i className="fa fa-google-plus" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

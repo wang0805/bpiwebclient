@@ -32,12 +32,12 @@ class AcctOpening extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Open New Account</h1>
+                  <h1>Open Account</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
-                    <li>Open New Account</li>
+                    <li>Open Account</li>
                   </ul>
                 </div>
               </div>
