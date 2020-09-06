@@ -1,48 +1,60 @@
 import React from "react";
 import { Field } from "formik";
-// import TextField from "@material-ui/core/TextField";
 import CustomInput from "../CustomInput";
+import { Grid } from "@material-ui/core";
 
 export const FormFirstStep = (formikProps) => {
   const { errors, touched } = formikProps;
   return (
     <React.Fragment>
-      <Field
-        name="firstName"
-        label="First Name"
-        as={CustomInput}
-        margin="normal"
-        error={touched.firstName && errors.firstName}
-        helperText={touched.firstName && errors.firstName}
-      />
-
-      <Field
-        name="lastName"
-        label="Last Name"
-        as={CustomInput}
-        margin="normal"
-        error={touched.lastName && errors.lastName}
-        helperText={touched.lastName && errors.lastName}
-      />
-
-      <Field
-        name="mobile"
-        label="Mobile"
-        as={CustomInput}
-        margin="normal"
-        error={touched.mobile && errors.mobile}
-        helperText={touched.mobile && errors.mobile}
-      />
-
-      <Field
-        type="email"
-        name="email"
-        label="Email Address"
-        as={CustomInput}
-        margin="normal"
-        error={touched.email && errors.email}
-        helperText={touched.email && errors.email}
-      />
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={6}>
+          <Field
+            name="firstName"
+            label="First Name*"
+            as={CustomInput}
+            error={touched.firstName && errors.firstName}
+            helperText={touched.firstName && errors.firstName}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Field
+            name="lastName"
+            label="Last Name*"
+            as={CustomInput}
+            error={touched.lastName && errors.lastName}
+            helperText={touched.lastName && errors.lastName}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Field
+            name="country"
+            label="Country"
+            as={CustomInput}
+            error={touched.mobile && errors.mobile}
+            helperText={touched.mobile && errors.mobile}
+          />
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Field
+            name="mobile"
+            label="Mobile Number*"
+            as={CustomInput}
+            error={touched.mobile && errors.mobile}
+            helperText={touched.mobile && errors.mobile}
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <Field
+            type="email"
+            name="email"
+            label="Email Address*"
+            as={CustomInput}
+            error={touched.email && errors.email}
+            helperText={touched.email && errors.email}
+          />
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
 };

@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ["Personal Particulars", "Account Type", "Completion"];
+  return ["Particulars", "Account", "Complete"];
 }
 
 export default function MultiStep() {
@@ -71,6 +71,7 @@ export default function MultiStep() {
   const formData = {
     firstName: "",
     lastName: "",
+    country: "",
     mobile: "",
     email: "",
     account: "",
@@ -152,7 +153,7 @@ export default function MultiStep() {
             <Typography className={classes.instructions}>
               Thank you for your submission!
             </Typography>
-            <div style={{ paddingTop: "40px" }}>
+            <div style={{ paddingTop: "50px" }}>
               <StyledButton onClick={handleReset}>Start Again</StyledButton>
             </div>
           </div>
@@ -166,7 +167,7 @@ export default function MultiStep() {
             {({ values, errors, touched }) => (
               <Form className={classes.form}>
                 {renderStep(activeStep, values, errors, touched)}
-                <div style={{ paddingTop: "40px" }}>
+                <div style={{ paddingTop: "50px" }}>
                   <StyledButton
                     disabled={activeStep === 0}
                     onClick={handleBack}
