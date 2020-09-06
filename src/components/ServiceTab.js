@@ -5,18 +5,18 @@ class ServiceTabExample extends Component {
     /* service tab menu */
     let serviceTabMenuData = [
       {
-        iconName: "flaticon-002-welding",
+        iconName: "flaticon-earth-globe",
         tabMenuName: "Global Clearing",
       },
       {
-        iconName: "flaticon-004-walkie-talkie",
+        iconName: "flaticon-stats",
         tabMenuName: "Emerging Markets CFD",
       },
       {
-        iconName: "flaticon-015-cart",
+        iconName: "flaticon-customer-service",
         tabMenuName: "Inter-Dealer Broker",
       },
-      { iconName: "flaticon-010-tank-1", tabMenuName: "Advisory" },
+      { iconName: "flaticon-advisor", tabMenuName: "Advisory" },
     ];
 
     let serviceTabMenuDatalist = serviceTabMenuData.map((val, i) => {
