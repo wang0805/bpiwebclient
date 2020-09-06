@@ -83,7 +83,7 @@ class Footer extends Component {
                           </li>
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/openaccount`}>
-                              Open New Account
+                              Open Account
                             </a>
                           </li>
                         </ul>
@@ -145,7 +145,7 @@ class Footer extends Component {
           </div>
           <div className="footer-copyright-wrapper">
             <div className="footer-copyright text-center">
-              Copyright © 2020, all right reserved. Edited by Wang Wenhao
+              Copyright © 2020, all right reserved (Edited by Wang Wenhao)
             </div>
           </div>
         </div>

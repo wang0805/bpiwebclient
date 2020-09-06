@@ -35,32 +35,32 @@ class ServiceTabExample extends Component {
 
     let serviceTabContentData = [
       {
-        bgUrl: "service-tab1.jpg",
+        bgUrl: "service1.png",
         contentTitle: "Global Clearing Services",
         contentDesc:
           "BPIFG provides market trading access and clearing services for global derivative markets across most Exchanges and asset classes including Internationalized derivatives from Chinese Exchanges",
         serviceLink: "clearing",
       },
       {
-        bgUrl: "service-tab1.jpg",
+        bgUrl: "service2.png",
         contentTitle: "Access to Emerging Markets Derivatives via CFD",
         contentDesc:
-          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges (DCE, ZCE, INE) cleared Commoditiy Derivatives",
+          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges cleared Commoditiy Derivatives",
         serviceLink: "cfd",
       },
       {
-        bgUrl: "service-tab1.jpg",
+        bgUrl: "service3.png",
         contentTitle: "Inter-Dealer Broking Services",
         contentDesc:
           "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
         serviceLink: "idb",
       },
       {
-        bgUrl: "service-tab1.jpg",
+        bgUrl: "service4.png",
         contentTitle: "Advisory",
         contentDesc:
           "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
-        serviceLink: "/",
+        serviceLink: "advisory",
       },
     ];
 
