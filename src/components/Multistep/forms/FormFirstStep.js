@@ -27,13 +27,7 @@ export const FormFirstStep = (formikProps) => {
           />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Field
-            name="country"
-            label="Country"
-            as={CustomInput}
-            error={touched.mobile && errors.mobile}
-            helperText={touched.mobile && errors.mobile}
-          />
+          <Field name="country" label="Country" as={CustomInput} />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Field
