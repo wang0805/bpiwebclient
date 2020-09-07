@@ -173,13 +173,19 @@ class MobileMenu extends Component {
                 </div>
                 {/*Off Canvas Widget Social Start*/}
                 <div className="off-canvas-widget-social">
-                  <a href="#/" title="Facebook">
+                  <a
+                    href="https://www.facebook.com/BPIFinancial/"
+                    title="Facebook"
+                  >
                     <i className="fa fa-facebook" />
                   </a>
                   {/* <a href="#/" title="Twitter">
                     <i className="fa fa-twitter" />
                   </a> */}
-                  <a href="#/" title="LinkedIn">
+                  <a
+                    href="https://www.linkedin.com/company/bpifinancial/"
+                    title="LinkedIn"
+                  >
                     <i className="fa fa-linkedin" />
                   </a>
                   {/* <a href="#/" title="Youtube">
