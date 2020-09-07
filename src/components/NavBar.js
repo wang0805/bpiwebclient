@@ -67,7 +67,7 @@ class NavBar extends Component {
                       <div className="social-links social-links--white-topbar d-inline-block">
                         <ul>
                           <li>
-                            <a href="//facebook.com">
+                            <a href="https://www.facebook.com/BPIFinancial/">
                               <i className="zmdi zmdi-facebook" />
                             </a>
                           </li>
@@ -82,7 +82,7 @@ class NavBar extends Component {
                             </a>
                           </li> */}
                           <li>
-                            <a href="//linkedin.com">
+                            <a href="https://www.linkedin.com/company/bpifinancial/">
                               <i className="zmdi zmdi-linkedin-box" />
                             </a>
                           </li>
