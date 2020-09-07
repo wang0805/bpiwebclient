@@ -4,19 +4,19 @@ class FeatureIcon extends Component {
   render() {
     let data = [
       {
-        featureIcon: "feature-1.png",
+        featureIcon: "feature-8.png",
         featureTitle: "SFC Type II Licence",
         featureDescription:
           "BPIF holds a Securities and Futures Commission (SFC) Type II Licence in Hong Kong to conduct clearing services of derivatives from global exchanges",
       },
       {
-        featureIcon: "feature-2.png",
+        featureIcon: "feature-9.png",
         featureTitle: "Commodities IDB",
         featureDescription:
           "BPIF has a regulatory exemption in Singapore to offer interdealer broking services for Negotiated Large Trades in commodities derivatives such as SGX cleared Iron Ore products",
       },
       {
-        featureIcon: "feature-3.png",
+        featureIcon: "feature-10.png",
         featureTitle: "Chinese derivatives CFD",
         featureDescription:
           "BPIF also offers electronic trading access on commodities derivatives from Chinese Exchanges such as DCE, INE and SHFE in the form of CFDs",
