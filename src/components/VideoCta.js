@@ -48,7 +48,14 @@ class VideoCta extends Component {
                       videoId="WEDIj9JBTC8"
                       onClose={() => this.setState({ isOpen: false })}
                     />
-                    <button onClick={this.openModal}>
+                    {/* to use modal, delete this image tag and use 
+                    the commented code below */}
+                    <img
+                      src="assets/img/backgrounds/video-cta.jpg"
+                      className="img-fluid"
+                      alt=""
+                    />
+                    {/* <button onClick={this.openModal}>
                       <div className="cta-video-image__image">
                         <img
                           src="assets/img/backgrounds/video-cta.jpg"
@@ -59,7 +66,7 @@ class VideoCta extends Component {
                       <div className="cta-video-image__icon">
                         <i className="ion-ios-play" />
                       </div>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
