@@ -127,7 +127,7 @@ class About extends Component {
                       segments of the industry making up of top producer,
                       consumer and funds collectively. Our majority shareholder
                       is Theme International Holdings Ltd, a public listed
-                      company on Hong Kong Stock Exchange (HK:990)
+                      company on Hong Kong Stock Exchange (990:HK)
                       <br />
                       <br />
                       Minority shareholders in BPIF includes one of the largest
