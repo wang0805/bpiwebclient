@@ -5,9 +5,12 @@ import ServiceGallery from "./components/ServiceGallery";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import { withTranslation } from "react-i18next";
 
 class Clearing extends Component {
   render() {
+    const { t } = this.props;
+
     let service_obj = [
       {
         sidebarListLink: "clearing",
@@ -53,7 +56,7 @@ class Clearing extends Component {
                         Services
                       </a>
                     </li>
-                    <li>Global Clearing Services</li>
+                    <li>Gloabl Clearing Services</li>
                   </ul>
                 </div>
               </div>
@@ -75,29 +78,13 @@ class Clearing extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Global Clearing Services</h2>
-                          <p>
-                            We support trading into product derivatives listed
-                            into almost all exchanges around the world including
-                            but not limited to SGX, CME group of exchanges, ICE,
-                            HKEX, OSE, etc
-                          </p>
-                          <p>
-                            We are able to clear OTC and voice-brokered products
-                            such as Forward Freight Agreement (FFA) into the
-                            various exchanges as well such as CME Clearport, SGX
-                            Titan and webICE
-                          </p>
-                          <p>
-                            We also support trading into internationalized
-                            products listed on Chinese exchanges such as Dalian
-                            Commodity Exchange listed Iron ore futures and all
-                            the derivatives listed under Shanghai International
-                            Energy Exchange
-                          </p>
+                          <h2>{t("globalclearing")}</h2>
+                          <p>{t("clearing1")}</p>
+                          <p>{t("clearing2")}</p>
+                          <p>{t("clearing3")}</p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Software</h3>
+                          <h3>{t("software")}</h3>
                           <ul>
                             <li>ATPlatform Technology Limited</li>
                             <li>CQG suite of products</li>
@@ -105,12 +92,9 @@ class Clearing extends Component {
                           </ul>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>FAQs</h3>
+                          <h3>{t("faqs")}</h3>
                           <ul>
-                            <li>
-                              Click on the Open New Account tab to obtain a
-                              secure link via email for account opening forms
-                            </li>
+                            <li>{t("faqs1")}</li>
                             <li>{null}</li>
                           </ul>
                         </div>
@@ -144,4 +128,4 @@ class Clearing extends Component {
   }
 }
 
-export default Clearing;
+export default withTranslation("translations")(Clearing);

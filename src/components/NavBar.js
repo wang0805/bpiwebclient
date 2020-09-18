@@ -258,24 +258,24 @@ class NavBar extends Component {
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/services`}
                                   >
-                                    Services
+                                    {t("service")}
                                   </Link>
                                 </li>
                                 <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/clearing`}
                                   >
-                                    Global Clearing
+                                    {t("globalclearing")}
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to={`${process.env.PUBLIC_URL}/cfd`}>
-                                    Emerging Markets CFD
+                                    {t("emergingmarketcfd")}
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to={`${process.env.PUBLIC_URL}/idb`}>
-                                    Inter-Dealer Broking
+                                    {t("idb")}
                                   </Link>
                                 </li>
                                 {/* <li>
