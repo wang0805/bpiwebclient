@@ -59,7 +59,7 @@ class About extends Component {
               <div className="row row-25 align-items-center">
                 <div className="col-lg-6 col-12 mb-30">
                   <div className="about-image-two">
-                    <img src="assets/img/about/about-3.jpg" alt="" />
+                    <img src="assets/img/about/about-3.png" alt="" />
                     {/* <span className="video-popup">
                       <ModalVideo
                         channel="youtube"
