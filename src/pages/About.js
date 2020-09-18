@@ -8,6 +8,8 @@ import TeamMemberGrid from "../components/TeamMemberGrid";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import ModalVideo from "react-modal-video";
+import { withTranslation } from "react-i18next";
+
 class About extends Component {
   constructor() {
     super();
@@ -22,6 +24,8 @@ class About extends Component {
   }
 
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         {/* Navigation bar */}
@@ -71,27 +75,18 @@ class About extends Component {
                 </div>
                 <div className="col-lg-6 col-12 mb-30">
                   <div className="about-content-two">
-                    <h3>Welcome to BPI Financial Group Limited</h3>
+                    <h3>{t("welcomeabout")}</h3>
                     {/* <h1>50 Years of Experience in Industry</h1> */}
-                    <p>
-                      BPI Financial Group Limited (BPIF) is a boutique financial
-                      instituition with a multinational presence
-                    </p>
-                    <h3>Mission</h3>
-                    <p>
-                      Our mission is to provide clients with the most
-                      comprehensive and effective trading solutions possible
-                    </p>
-                    <h3>Vision</h3>
-                    <p>
-                      Our vision is to become the best one stop solution
-                      provider in providing trading solutions for every client
-                    </p>
+                    <p>{t("welcomeabout1")}</p>
+                    <h3>{t("mission")}</h3>
+                    <p>{t("missionstatement")}</p>
+                    <h3>{t("vision")}</h3>
+                    <p>{t("visionstatement")}</p>
                     <a
                       href="services"
                       className="ht-btn--default ht-btn--default--dark-hover section-space--top--20"
                     >
-                      Our Services
+                      {t("ourservice")}
                     </a>
                   </div>
                 </div>
@@ -120,48 +115,38 @@ class About extends Component {
                 <div className="col-lg-6 col-12 order-3 order-lg-1">
                   <div className="about-content about-content-1">
                     <h3>
-                      <span>Our Shareholders</span>
+                      <span>{t("shareholder")}</span>
                     </h3>
                     <p>
-                      Our shareholders are diversified to represent different
-                      segments of the industry making up of top producer,
-                      consumer and funds collectively. Our majority shareholder
-                      is Theme International Holdings Ltd, a public listed
-                      company on Hong Kong Stock Exchange (990:HK)
+                      {t("shareholderwrite")}
                       <br />
                       <br />
-                      Minority shareholders in BPIF includes one of the largest
-                      privately Iron Ore miner globally, one of the largest
-                      privately owned steel mills in Mainland China, as well as
-                      one of the active commodity focused investment fund in the
-                      industry
+                      {t("shareholderwrite2")}
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-12 order-4">
                   <div className="about-content about-content-2">
                     <h3>
-                      <span>Subsidaries under BPIFG</span>
+                      <span>{t("subsidary")}</span>
                     </h3>
                     <p>
-                      Across Asia, we have presence in Hong Kong, Singapore and
-                      Shanghai to be closer to our clients. Our entities are
-                      fully regulated in their respective jurisdictions
+                      {t("subsidarywrite")}
                       <br />
                       <br />
-                      1. Bright Point International Futures Limited (HK)
+                      {t("sub1")}
                       <br />
-                      2. Bright Point International Futures (SG) Pte Ltd
+                      {t("sub2")}
                       <br />
-                      3. BPI Trading (SG) Pte Ltd
+                      {t("sub3")}
                       <br />
-                      4. Guang Dian International Trading Limited (CN)
+                      {t("sub4")}
                     </p>
                     <a
                       href={`${process.env.PUBLIC_URL}/contact-us`}
                       className="ht-btn--default ht-btn--default--dark-hover section-space--top--20"
                     >
-                      Contact us
+                      {t("contact")}
                     </a>
                   </div>
                 </div>
@@ -193,4 +178,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default withTranslation("translations")(About);

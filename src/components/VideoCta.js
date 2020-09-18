@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
+import { withTranslation } from "react-i18next";
 
 class VideoCta extends Component {
   constructor() {
@@ -14,6 +15,8 @@ class VideoCta extends Component {
     this.setState({ isOpen: true });
   }
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         {/*====================  video cta area ====================*/}
@@ -23,19 +26,15 @@ class VideoCta extends Component {
               <div className="col-lg-6 col-md-6">
                 <div className="video-cta-content">
                   <h4 className="video-cta-content__small-title">ABOUT US</h4>
-                  <h3 className="video-cta-content__title">Welcome to BPI</h3>
-                  <p className="video-cta-content__text">
-                    BPI Financial Group Limited (BPIF), through our various
-                    subsidaries, are licenced to operate regulated businesses in
-                    Hong Kong and Singapore. BPIF is also a subsidary of an Hong
-                    Kong Stock Exchange Listed company Theme International
-                    Holdings Limited
-                  </p>
+                  <h3 className="video-cta-content__title">
+                    {t("welcomecta")}
+                  </h3>
+                  <p className="video-cta-content__text">{t("welcomecta1")}</p>
                   <a
                     href={`${process.env.PUBLIC_URL}/contact-us`}
                     className="ht-btn ht-btn--round"
                   >
-                    CONTACT US
+                    {t("contact")}
                   </a>
                 </div>
               </div>
@@ -79,4 +78,4 @@ class VideoCta extends Component {
   }
 }
 
-export default VideoCta;
+export default withTranslation("translations")(VideoCta);

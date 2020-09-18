@@ -1,22 +1,26 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { withTranslation } from "react-i18next";
+
 class ServiceTabExample extends Component {
   render() {
+    const { t } = this.props;
+
     /* service tab menu */
     let serviceTabMenuData = [
       {
         iconName: "flaticon-earth-globe",
-        tabMenuName: "Global Clearing",
+        tabMenuName: t("globalclearing"),
       },
       {
         iconName: "flaticon-stats",
-        tabMenuName: "Emerging Markets CFD",
+        tabMenuName: t("emergingmarketcfd"),
       },
       {
         iconName: "flaticon-customer-service",
-        tabMenuName: "Inter-Dealer Broker",
+        tabMenuName: t("idb"),
       },
-      { iconName: "flaticon-advisor", tabMenuName: "Advisory" },
+      { iconName: "flaticon-advisor", tabMenuName: t("advisory") },
     ];
 
     let serviceTabMenuDatalist = serviceTabMenuData.map((val, i) => {
@@ -36,30 +40,26 @@ class ServiceTabExample extends Component {
     let serviceTabContentData = [
       {
         bgUrl: "service1.png",
-        contentTitle: "Global Clearing Services",
-        contentDesc:
-          "BPIFG provides market trading access and clearing services for global derivative markets across most Exchanges and asset classes including Internationalized derivatives from Chinese Exchanges",
+        contentTitle: t("globalclearing"),
+        contentDesc: t("globalclearingwrite"),
         serviceLink: "clearing",
       },
       {
         bgUrl: "service2.png",
-        contentTitle: "Access to Emerging Markets Derivatives via CFD",
-        contentDesc:
-          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges cleared Commoditiy Derivatives",
+        contentTitle: t("emergingmarketcfd"),
+        contentDesc: t("emwrite"),
         serviceLink: "cfd",
       },
       {
         bgUrl: "service3.png",
-        contentTitle: "Inter-Dealer Broking Services",
-        contentDesc:
-          "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
+        contentTitle: t("idb"),
+        contentDesc: t("idbwrite"),
         serviceLink: "idb",
       },
       {
         bgUrl: "service4.png",
-        contentTitle: "Advisory",
-        contentDesc:
-          "Working in close collaboration with our institutional clients, BPIF Group not only helps develop tailored hedging solutions but also facilitates in the execution of such hedging strategies",
+        contentTitle: t("advisory"),
+        contentDesc: t("advisorywrite"),
         serviceLink: "advisory",
       },
     ];
@@ -80,7 +80,7 @@ class ServiceTabExample extends Component {
                 href={`${process.env.PUBLIC_URL}/${val.serviceLink}`}
                 className="see-more-link"
               >
-                SEE MORE
+                {t("seemore")}
               </a>
             </div>
           </div>
@@ -131,4 +131,4 @@ class ServiceTabExample extends Component {
   }
 }
 
-export default ServiceTabExample;
+export default withTranslation("translations")(ServiceTabExample);

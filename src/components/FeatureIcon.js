@@ -1,25 +1,25 @@
 import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
 
 class FeatureIcon extends Component {
   render() {
+    const { t } = this.props;
+
     let data = [
       {
         featureIcon: "feature-8.png",
-        featureTitle: "SFC Type II Licence",
-        featureDescription:
-          "BPIF holds a Securities and Futures Commission (SFC) Type II Licence in Hong Kong to conduct clearing services of derivatives from global exchanges",
+        featureTitle: t("licence"),
+        featureDescription: t("licencewrite"),
       },
       {
         featureIcon: "feature-9.png",
-        featureTitle: "Commodities IDB",
-        featureDescription:
-          "BPIF has a regulatory exemption in Singapore to offer interdealer broking services for Negotiated Large Trades in commodities derivatives such as SGX cleared Iron Ore products",
+        featureTitle: t("commod"),
+        featureDescription: t("commodwrite"),
       },
       {
         featureIcon: "feature-10.png",
-        featureTitle: "Chinese derivatives CFD",
-        featureDescription:
-          "BPIF also offers electronic trading access on commodities derivatives from Chinese Exchanges such as DCE, INE and SHFE in the form of CFDs",
+        featureTitle: t("cncfd"),
+        featureDescription: t("cncfdwrite"),
       },
     ];
 
@@ -66,4 +66,4 @@ class FeatureIcon extends Component {
   }
 }
 
-export default FeatureIcon;
+export default withTranslation("translations")(FeatureIcon);

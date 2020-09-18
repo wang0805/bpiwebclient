@@ -1,16 +1,30 @@
 import React from "react";
+import globalform from "../../../../public/assets/words/globalform.docx";
+import cfdform from "../../../../public/assets/words/cfdform.docx";
+import indform from "../../../../public/assets/words/indivdform.docx";
+
 // import { List, ListItem, ListItemText } from "@material-ui/core/";
 
 export const FormSuccess = (formikProps) => {
   const { firstName, lastName, email, mobile, account } = formikProps.values;
 
   let urllink = "";
+  // if (account === "Corporate") {
+  //   urllink =
+  //     "https://www.cognitoforms.com/BPIFinancial1/AccountOpeningCorporateV228Sep1820181101";
+  // } else if (account === "Individual") {
+  //   urllink =
+  //     "https://www.cognitoforms.com/BPIFinancial1/AccountOpeningIndividualV228Sep1820181101";
+  // } else {
+  //   urllink = "TBC";
+  // }
+
   if (account === "Corporate") {
-    urllink =
-      "https://www.cognitoforms.com/BPIFinancial1/AccountOpeningCorporateV228Sep1820181101";
+    urllink = globalform;
   } else if (account === "Individual") {
-    urllink =
-      "https://www.cognitoforms.com/BPIFinancial1/AccountOpeningIndividualV228Sep1820181101";
+    urllink = indform;
+  } else if (account === "Corporate CFD") {
+    urllink = cfdform;
   } else {
     urllink = "TBC";
   }
@@ -36,7 +50,7 @@ export const FormSuccess = (formikProps) => {
           Thank you {firstName} {lastName} for your interest in opening an{" "}
           {account} account with us!
         </p>
-        <p style={{ textAlign: "center" }}>
+        {/* <p style={{ textAlign: "center" }}>
           Please click on this{" "}
           <a
             href={urllink}
@@ -49,6 +63,20 @@ export const FormSuccess = (formikProps) => {
             Redirect Link
           </a>{" "}
           to be redirected to a secure page to complete the onboarding form
+        </p> */}
+        <p style={{ textAlign: "center" }}>
+          Please click on this{" "}
+          <a
+            href={urllink}
+            style={{
+              color: "#9e1e16",
+              textDecoration: "underline",
+              fontWeight: "bold",
+            }}
+          >
+            <i className="fa fa-file-word-o" /> Download Link
+          </a>{" "}
+          to download the onboarding form
         </p>
         <p style={{ textAlign: "center" }}>
           Do feel free to contact us if you require any assistance or if you

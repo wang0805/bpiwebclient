@@ -14,24 +14,22 @@ class Services extends Component {
         pageLink: "clearing",
         img: "service1.jpg",
         iconClass: "flaticon-earth-globe",
-        serviceTitle: "Global Clearing Services",
-        serviceSubtitle: t("clearing"),
+        serviceTitle: t("globalclearing"),
+        serviceSubtitle: t("globalclearingwrite"),
       },
       {
         pageLink: "cfd",
         img: "service2.jpg",
         iconClass: "flaticon-stats",
-        serviceTitle: "Emerging Markets CFD",
-        serviceSubtitle:
-          "BPIF provides Electronic Trading Access to Emerging Commodity Derivatives, specifically Chinese Exchanges cleared Commoditiy Derivatives",
+        serviceTitle: t("emergingmarketcfd"),
+        serviceSubtitle: t("emwrite"),
       },
       {
         pageLink: "idb",
         img: "service3.jpg",
         iconClass: "flaticon-customer-service",
-        serviceTitle: "Inter-Dealer Broker",
-        serviceSubtitle:
-          "BPIFG acts as an intermediary to facilitate price discovery and enhance liquidity in OTC brokered derivatives such as SGX cleared iron ore and coking products",
+        serviceTitle: t("idb"),
+        serviceSubtitle: t("idbwrite"),
       },
       // {
       //   pageLink: "advisory",
@@ -91,7 +89,7 @@ class Services extends Component {
                 href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
                 className="see-more-link"
               >
-                SEE MORE
+                {t("seemore")}
               </a>
             </div>
           </div>

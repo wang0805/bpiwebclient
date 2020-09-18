@@ -5,9 +5,12 @@ import ServiceGallery from "./components/ServiceGallery";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import { withTranslation } from "react-i18next";
 
 class Cfd extends Component {
   render() {
+    const { t } = this.props;
+
     let service_obj = [
       {
         sidebarListLink: "cfd",
@@ -74,7 +77,7 @@ class Cfd extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Emerging Markets CFDs</h2>
+                          <h2>{t("emergingmarketcfd")}</h2>
                           <p>
                             We support trading into Emerging Markets Derivatives
                             which are not easily accessible by the global
@@ -88,7 +91,7 @@ class Cfd extends Component {
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>Software</h3>
+                          <h3>{t("software")}</h3>
                           <ul>
                             <li>ATPlatform Technology Limited</li>
                             <li>
@@ -99,12 +102,9 @@ class Cfd extends Component {
                           </ul>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
-                          <h3>FAQs</h3>
+                          <h3>{t("faqs")}</h3>
                           <ul>
-                            <li>
-                              Click on the Open New Account tab to obtain a
-                              secure link via email for account opening forms
-                            </li>
+                            <li>{t("faqs1")}</li>
                           </ul>
                         </div>
                         {/* <div className="col-lg-6 col-12 section-space--top--30">
@@ -137,4 +137,4 @@ class Cfd extends Component {
   }
 }
 
-export default Cfd;
+export default withTranslation("translations")(Cfd);

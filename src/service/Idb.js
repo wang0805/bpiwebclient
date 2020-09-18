@@ -5,9 +5,12 @@ import ServiceGallery from "./components/ServiceGallery";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import { withTranslation } from "react-i18next";
 
 class Idb extends Component {
   render() {
+    const { t } = this.props;
+
     let service_obj = [
       {
         sidebarListLink: "idb",
@@ -65,14 +68,8 @@ class Idb extends Component {
                     <div className="content section-space--top--30">
                       <div className="row">
                         <div className="col-12">
-                          <h2>Inter-Dealer Broking</h2>
-                          <p>
-                            BPIFG acts as an intermediary for mainly but not
-                            limited to SGX cleared Iron Ore (Platts 62% Index,
-                            MB 65% Index, Lump Premium), EEX and SGX cleared
-                            Forward Freight Agreements (FFA) as well as CME and
-                            SGX cleared Coking Coal derivatives
-                          </p>
+                          <h2>{t("idb")}</h2>
+                          <p>{t("idb1")}</p>
                         </div>
                       </div>
                     </div>
@@ -100,4 +97,4 @@ class Idb extends Component {
   }
 }
 
-export default Idb;
+export default withTranslation("translations")(Idb);

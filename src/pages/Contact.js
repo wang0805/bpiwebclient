@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import { withTranslation } from "react-i18next";
 
 // const encode = (data) => {
 //   return Object.keys(data)
@@ -27,6 +28,8 @@ class Contact extends Component {
   // };
 
   render() {
+    const { t } = this.props;
+
     let gourl = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ60V1YBMZ2jER5-Hqxiv_iss&key=${process.env.REACT_APP_GOOGLE_API}`;
     console.log(process.env);
 
@@ -82,10 +85,7 @@ class Contact extends Component {
                           <i className="ion-android-map" />
                         </span>
                         <span className="text">
-                          <span>
-                            3 Anson Road, Springleaf Tower #19-01, Singapore
-                            079909
-                          </span>
+                          <span>{t("singadd")}</span>
                         </span>
                       </li>
                       <li>
@@ -93,11 +93,7 @@ class Contact extends Component {
                           <i className="ion-android-map" />
                         </span>
                         <span className="text">
-                          <span>
-                            Unit 3401-03, 34/F, China Merchants Tower, Shun Tak
-                            Centre, No. 168-200 Connaught Road Central, Sheung
-                            Wan, Hong Kong
-                          </span>
+                          <span>{t("hkadd")}</span>
                         </span>
                       </li>
                       <li>
@@ -179,4 +175,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withTranslation("translations")(Contact);
