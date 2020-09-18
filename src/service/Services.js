@@ -12,21 +12,21 @@ class Services extends Component {
     let data = [
       {
         pageLink: "clearing",
-        img: "service1.jpg",
+        img: "service1.png",
         iconClass: "flaticon-earth-globe",
         serviceTitle: t("globalclearing"),
         serviceSubtitle: t("globalclearingwrite"),
       },
       {
         pageLink: "cfd",
-        img: "service2.jpg",
+        img: "service2.png",
         iconClass: "flaticon-stats",
         serviceTitle: t("emergingmarketcfd"),
         serviceSubtitle: t("emwrite"),
       },
       {
         pageLink: "idb",
-        img: "service3.jpg",
+        img: "service3.png",
         iconClass: "flaticon-customer-service",
         serviceTitle: t("idb"),
         serviceSubtitle: t("idbwrite"),

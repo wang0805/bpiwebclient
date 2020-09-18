@@ -20,12 +20,12 @@ import Clearing from "./service/Clearing";
 import Cfd from "./service/Cfd";
 import Idb from "./service/Idb";
 // import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
-import Projects from "./project/Projects";
-import ProjectDetails from "./project/ProjectDetails";
-import BlogLeftSidebar from "./blog/BlogLeftSidebar";
-import BlogRightSidebar from "./blog/BlogRightSidebar";
-import BlogDetailsLeftSidebar from "./blog/BlogDetailsLeftSidebar";
-import BlogDetailsRightSidebar from "./blog/BlogDetailsRightSidebar";
+// import Projects from "./project/Projects";
+// import ProjectDetails from "./project/ProjectDetails";
+// import BlogLeftSidebar from "./blog/BlogLeftSidebar";
+// import BlogRightSidebar from "./blog/BlogRightSidebar";
+// import BlogDetailsLeftSidebar from "./blog/BlogDetailsLeftSidebar";
+// import BlogDetailsRightSidebar from "./blog/BlogDetailsRightSidebar";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
@@ -79,7 +79,7 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/openaccount`}
             component={AcctOpening}
           />
-          <Route
+          {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/projects`}
             component={Projects}
@@ -108,7 +108,7 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/blog-details-right-sidebar`}
             component={BlogDetailsRightSidebar}
-          />
+          /> */}
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/contact-us`}
