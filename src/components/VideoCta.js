@@ -50,7 +50,7 @@ class VideoCta extends Component {
                     {/* to use modal, delete this image tag and use 
                     the commented code below */}
                     <img
-                      src="assets/img/backgrounds/video-cta.jpg"
+                      src="assets/img/backgrounds/video-cta.png"
                       className="img-fluid"
                       alt=""
                     />
