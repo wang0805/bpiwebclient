@@ -79,15 +79,21 @@ class Cfd extends Component {
                         <div className="col-12">
                           <h2>{t("emergingmarketcfd")}</h2>
                           <p>
-                            We support trading into Emerging Markets Derivatives
-                            which are not easily accessible by the global
-                            participants
+                            We support electronic trading access into Emerging Markets Derivatives
+                            which are not easily accessible by global
+                            participants through the form of Contract-For-Difference
                           </p>
                           <p>
                             Our products offerings right now includes all
                             Commodities Derivatives (both Futures and Options)
                             that are currently listed on regulated Chinese
-                            Exchanges
+                            Exchanges such as Dalian Commodity exchange, Shanghai 
+                            futures exchange and Zhengzhou commodities exchange
+                          </p>
+                          <p>
+                            Traders are able to execute onshore versus offshore trading 
+                            strategies easily via the autoTrader functionality from our 
+                            cost effective platform ATP
                           </p>
                         </div>
                         <div className="col-lg-6 col-12 section-space--top--30">
@@ -95,9 +101,7 @@ class Cfd extends Component {
                           <ul>
                             <li>ATPlatform Technology Limited</li>
                             <li>
-                              ATP is able to provide cost-effective Spreader and
-                              AutoTrader functions for traders doing onshore vs
-                              offshore trading strategies
+                              {/* pass */}
                             </li>
                           </ul>
                         </div>

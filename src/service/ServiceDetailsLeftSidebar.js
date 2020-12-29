@@ -75,7 +75,7 @@ class ServiceDetailsLeftSidebar extends Component {
                         <div className="col-12">
                           <h2>Global Clearing Services</h2>
                           <p>
-                            BPIFG provides market trading access and clearing
+                            BPIF provides market trading access and clearing
                             services for global derivative markets across all
                             developed Exchanges around the world and asset
                             classes
@@ -103,7 +103,7 @@ class ServiceDetailsLeftSidebar extends Component {
                         <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Inder-Dealer Broker</h3>
                           <p>
-                            BPIFG acts as an intermediary for mainly but not
+                            BPIF acts as an intermediary for mainly but not
                             limited to SGX cleared Iron Ore (Platts 62%, MB 65%,
                             LP) and Coking Coal derivatives
                           </p>
