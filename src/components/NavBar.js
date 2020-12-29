@@ -258,7 +258,7 @@ class NavBar extends Component {
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/services`}
                                   >
-                                    {t("service")}
+                                    {t("service1")}
                                   </Link>
                                 </li>
                                 <li>
