@@ -9,7 +9,7 @@ class TeamMemberGrid extends Component {
 
     let data = [
       {
-        profileImage: "team-1.png",
+        profileImage: "team-1-small.jpg",
         profileTitle: t("kennymah"),
         profileDesignation: "Group CEO",
         profileEmail: "Kennymah@bpifinancial.com",
@@ -21,7 +21,7 @@ class TeamMemberGrid extends Component {
         },
       },
       {
-        profileImage: "team-2.png",
+        profileImage: "team-1-small.jpg",
         profileTitle: t("songhua"),
         profileDesignation: "Deputy Head of Clearing",
         profileEmail: "shfan@bpifinancial.com",
@@ -33,7 +33,7 @@ class TeamMemberGrid extends Component {
         },
       },
       {
-        profileImage: "team-3.png",
+        profileImage: "team-1-small.jpg",
         profileTitle: t("rouying"),
         profileDesignation: "Head Of Sales",
         profileEmail: "rywang@bpifinancial.com",
