@@ -48,7 +48,7 @@ export const FormSuccess = (formikProps) => {
       <div style={{ width: "60%" }}>
         <p style={{ textAlign: "center" }}>
           Thank you {firstName} {lastName} for your interest in opening an{" "}
-          {account} account with us!
+          {account} account with Bright Point International Financial Group
         </p>
         {/* <p style={{ textAlign: "center" }}>
           Please click on this{" "}
@@ -74,12 +74,13 @@ export const FormSuccess = (formikProps) => {
               fontWeight: "bold",
             }}
           >
-            <i className="fa fa-file-word-o" /> Download Link
+            <i className="fa fa-file-word-o" />{" "}Download Link
           </a>{" "}
-          to download the onboarding form
+          to download the onboarding form, and mail back the 
+          completed copy to sales@bpifinancial.com
         </p>
         <p style={{ textAlign: "center" }}>
-          Do feel free to contact us if you require any assistance or if you
+          Do contact us if you require any assistance or if you
           would like to speak to a sales personnel
         </p>
         {/* <List>

@@ -108,7 +108,7 @@ class MobileMenu extends Component {
                           Global Clearing
                         </Link>
                         <Link to={`${process.env.PUBLIC_URL}/cfd`}>
-                          Emerging Markets CFD
+                          Emerging Market CFD
                         </Link>
                         <Link to={`${process.env.PUBLIC_URL}/idb`}>
                           Inter-Dealer Broking

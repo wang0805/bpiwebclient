@@ -14,19 +14,19 @@ export const FormSecondStep = (formikProps) => {
       <RadioGroup>
         <label>
           <Field as={Radio} name="account" value="Individual" />
-          Individual Account
+          Individual Clearing Account (HK)
         </label>
         <label>
           <Field as={Radio} name="account" value="Corporate" />
-          Corporate Account
+          Corporate Clearing Account (HK)
         </label>
         <label>
           <Field as={Radio} name="account" value="Corporate CFD" />
-          Corporate CFD Account
+          Corporate CFD Account (SG)
         </label>
         <label>
           <Field as={Radio} name="account" value="IDB" />
-          IDB Account
+          Inter-Dealer Broker Account (SG)
         </label>
       </RadioGroup>
     </React.Fragment>
