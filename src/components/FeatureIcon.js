@@ -8,18 +8,18 @@ class FeatureIcon extends Component {
     let data = [
       {
         featureIcon: "feature-8.png",
-        featureTitle: t("licence"),
-        featureDescription: t("licencewrite"),
+        featureTitle: t("energyrisk2020"),
+        featureDescription: t("awardwrite"),
       },
       {
         featureIcon: "feature-9.png",
-        featureTitle: t("commod"),
-        featureDescription: t("commodwrite"),
+        featureTitle: t("energyrisk2021"),
+        featureDescription: t("awardwrite2"),
       },
       {
         featureIcon: "feature-10.png",
-        featureTitle: t("cncfd"),
-        featureDescription: t("cncfdwrite"),
+        featureTitle: t("idbaward"),
+        featureDescription: t("awardwrite3"),
       },
     ];
 

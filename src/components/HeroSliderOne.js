@@ -33,7 +33,7 @@ class HeroSliderOne extends Component {
 
     let data = [
       {
-        bgImg: "slider3.png",
+        bgImg: "slider.gif",
         sliderTitle: "Welcome",
         sliderSubtitle:
           "One stop shop in Global Market Access and Trading solutions",
@@ -47,7 +47,7 @@ class HeroSliderOne extends Component {
         btnLink: "openaccount",
       },
       {
-        bgImg: "slider1.png",
+        bgImg: "slider3.png",
         sliderTitle: "Welcome",
         sliderSubtitle: "Advisory, Research Analysis and Hedging solutions",
         btnLink: "openaccount",

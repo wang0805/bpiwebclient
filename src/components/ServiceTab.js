@@ -42,25 +42,25 @@ class ServiceTabExample extends Component {
         bgUrl: "service1.png",
         contentTitle: t("globalclearing"),
         contentDesc: t("globalclearingwrite"),
-        serviceLink: "clearing",
+        serviceLink: `${process.env.PUBLIC_URL}/clearing`,
       },
       {
         bgUrl: "service2.png",
         contentTitle: t("emergingmarketcfd"),
         contentDesc: t("emwrite"),
-        serviceLink: "cfd",
+        serviceLink: `${process.env.PUBLIC_URL}/cfd`,
       },
       {
         bgUrl: "service3.png",
         contentTitle: t("idb"),
         contentDesc: t("idbwrite"),
-        serviceLink: "idb",
+        serviceLink: `${process.env.PUBLIC_URL}/idb`,
       },
       {
         bgUrl: "service4.png",
-        contentTitle: t("advisory"),
-        contentDesc: t("advisorywrite"),
-        serviceLink: "advisory",
+        contentTitle: t("bpit"),
+        contentDesc: t("bpitwrite"),
+        serviceLink: "https://www.bpitradingsg.com/",
       },
     ];
 
@@ -77,7 +77,7 @@ class ServiceTabExample extends Component {
               <h3 className="service-tab__title">{val.contentTitle}</h3>
               <p className="service-tab__text">{val.contentDesc}</p>
               <a
-                href={`${process.env.PUBLIC_URL}/${val.serviceLink}`}
+                href={`${val.serviceLink}`}
                 className="see-more-link"
               >
                 {t("seemore")}
