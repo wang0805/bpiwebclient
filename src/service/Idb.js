@@ -81,7 +81,7 @@ class Idb extends Component {
                               BPI Financial offers over-the-counter broking across a range of commodities including bulk commodities, base and precious metals
                             </p>
                             <p>
-                              This includes Iron Ore (platts 62% Index, MB 65% Index, Lump Premium), Forweight Freight Agreements (FFA), Coal and Energy products
+                              This includes Iron Ore (Platts 62% Index, MB 65% Index, Lump Premium), Forweight Freight Agreements (FFA), Coal and Energy products
                             </p>
                             <p>
                               By leveraging on our existing network and also working with a new client base, within about six months we have become the dominant provider in the broking of M42 coal derivatives
