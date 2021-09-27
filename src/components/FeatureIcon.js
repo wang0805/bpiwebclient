@@ -52,7 +52,7 @@ class FeatureIcon extends Component {
         <div
           className={`feature-section section-space--inner--100 ${this.props.background}`}
         >
-          <div className="container">
+          <div className="container" style={{maxWidth:"1350px"}}>
             <div className="col-lg-12">
               <div className="feature-item-wrapper">
                 <div className="row">{Datalist}</div>
