@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import aischedule from "../../public/assets/pdf/AIschedules.pdf"
+import execution from "../../public/assets/pdf/ExecutionPolicy.pdf"
+
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -106,13 +109,13 @@ class Footer extends Component {
                             <a href={`${process.env.PUBLIC_URL}/`}>Affliates</a>
                           </li> */}
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Disclaimer
+                            <a href={aischedule}>
+                              AI Schedule
                             </a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Privacy Policy
+                            <a href={execution}>
+                              Execution Policy
                             </a>
                           </li>
                         </ul>
