@@ -62,14 +62,14 @@ class MobileMenu extends Component {
           </a>
           <div className="offcanvas-wrapper">
             <div className="offcanvas-inner-content">
-              <div className="offcanvas-mobile-search-area">
+              {/* <div className="offcanvas-mobile-search-area">
                 <form action="#">
                   <input type="search" placeholder="Search ..." />
                   <button type="submit">
                     <i className="fa fa-search" />
                   </button>
                 </form>
-              </div>
+              </div> */}
               <nav className="offcanvas-navigation" id="offcanvas-navigation">
                 <ul>
                   <li className="menu-item-has-children">
@@ -98,21 +98,32 @@ class MobileMenu extends Component {
                       SERVICE
                     </Link>
                     <ul className="sub-menu">
-                      <li>
+                      <li className="">
                         <Link to={`${process.env.PUBLIC_URL}/services`}>
-                          Service List
+                          Service
                         </Link>
+                          <ul className="sub-menu">
+                            <li>
+                              <Link to={`${process.env.PUBLIC_URL}/clearing`}>
+                                Global Clearing
+                              </Link>
+                              <Link to={`${process.env.PUBLIC_URL}/cfd`}>
+                                Emerging Market CFD
+                              </Link>
+                              <Link to={`${process.env.PUBLIC_URL}/idb`}>
+                                Inter-Dealer Broking
+                              </Link>
+                            </li>
+                          </ul>
                       </li>
                       <li>
                         <Link to={`${process.env.PUBLIC_URL}/clearing`}>
-                          Global Clearing
+                          Software
                         </Link>
-                        <Link to={`${process.env.PUBLIC_URL}/cfd`}>
-                          Emerging Market CFD
+                        <Link to={`${process.env.PUBLIC_URL}/`}>
+                          FAQ
                         </Link>
-                        <Link to={`${process.env.PUBLIC_URL}/idb`}>
-                          Inter-Dealer Broking
-                        </Link>
+           
                         {/* <Link to={`${process.env.PUBLIC_URL}/advisory`}>
                           Advisory
                         </Link> */}
