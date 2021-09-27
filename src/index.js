@@ -19,6 +19,7 @@ import Services from "./service/Services";
 import Clearing from "./service/Clearing";
 import Cfd from "./service/Cfd";
 import Idb from "./service/Idb";
+import Software from "./service/Software"
 // import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
 // import Projects from "./project/Projects";
 // import ProjectDetails from "./project/ProjectDetails";
@@ -69,6 +70,7 @@ class Root extends Component {
           />
           <Route exact path={`${process.env.PUBLIC_URL}/cfd`} component={Cfd} />
           <Route exact path={`${process.env.PUBLIC_URL}/idb`} component={Idb} />
+          <Route exact path={`${process.env.PUBLIC_URL}/software`} component={Software} />
           {/* <Route
             exact
             path={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}

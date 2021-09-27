@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 import { withTranslation } from "react-i18next";
 
@@ -288,7 +288,7 @@ class NavBar extends Component {
                                 </li>
                                 <li>
                                   <Link
-                                    to={`${process.env.PUBLIC_URL}/`}
+                                    to={`${process.env.PUBLIC_URL}/software`}
                                   >
                                     Software
                                   </Link>
