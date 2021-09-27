@@ -20,7 +20,7 @@ class ServiceTabExample extends Component {
         iconName: "flaticon-customer-service",
         tabMenuName: t("idb"),
       },
-      { iconName: "flaticon-advisor", tabMenuName: t("advisory") },
+      { iconName: "flaticon-advisor", tabMenuName: t("bpit") },
     ];
 
     let serviceTabMenuDatalist = serviceTabMenuData.map((val, i) => {
@@ -91,7 +91,7 @@ class ServiceTabExample extends Component {
     return (
       <div>
         {/*====================  service tab area ====================*/}
-        <div className="service-tab-area section-space--inner--120">
+        <div className="service-tab-area section-space--inner--40">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
