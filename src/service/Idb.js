@@ -73,6 +73,31 @@ class Idb extends Component {
                         </div>
                       </div>
                     </div>
+                    <div className="content section-space--top--30">
+                      <div className="row">
+                        <div className="col-lg-6 col-12 section-space--top--30">
+                          <h3>Bulk Commodities Brokerage</h3>
+                            <p>
+                              BPI Financial offers over-the-counter broking across a range of commodities including bulk commodities, base and precious metals
+                            </p>
+                            <p>
+                              This includes Iron Ore (platts 62% Index, MB 65% Index, Lump Premium), Forweight Freight Agreements (FFA), Coal and Energy products
+                            </p>
+                            <p>
+                              By leveraging on our existing network and also working with a new client base, within about six months we have become the dominant provider in the broking of M42 coal derivatives
+                            </p>                 
+                        </div>
+                        <div className="col-lg-6 col-12 section-space--top--30">
+                          <h3>RMB Denominated Rrokerage</h3>
+                          <p>
+                            In early 2021, BPI Financial launched a team of brokers in Shanghai offering renminbi-denominated iron ore swaps, to target physical traders in the iron ore space that need to hedge their procurement and sales 
+                          </p>
+                           <p>
+                            Building on its success, the team has expanded both in size and in terms of products to also focus on renminbi-denominated steel products
+                          </p> 
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 {/* <div className="col-lg-4 col-12 order-2 order-lg-1">
