@@ -60,17 +60,17 @@ class About extends Component {
                 <div className="col-lg-6 col-12 mb-30">
                   <div className="about-image-two">
                     <img src="assets/img/about/about-4.png" alt="" />
-                    {/* <span className="video-popup">
+                    <span className="video-popup">
                       <ModalVideo
-                        channel="youtube"
+                        channel="vimeo"
                         isOpen={this.state.isOpen}
-                        videoId="WEDIj9JBTC8"
+                        videoId="616012690"
                         onClose={() => this.setState({ isOpen: false })}
                       />
                       <button onClick={this.openModal}>
                         <i className="ion-ios-play" />
                       </button>
-                    </span> */}
+                    </span>
                   </div>
                 </div>
                 <div className="col-lg-6 col-12 mb-30">

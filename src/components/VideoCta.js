@@ -42,9 +42,9 @@ class VideoCta extends Component {
                 <div className="cta-video-image">
                   <div className="video-popup">
                     <ModalVideo
-                      channel="youtube"
+                      channel="vimeo"
                       isOpen={this.state.isOpen}
-                      videoId="WEDIj9JBTC8"
+                      videoId="616012690"
                       onClose={() => this.setState({ isOpen: false })}
                     />
                     {/* to use modal, delete this image tag and use 
@@ -57,7 +57,7 @@ class VideoCta extends Component {
                     <button onClick={this.openModal}>
                       <div className="cta-video-image__image">
                         <img
-                          src="assets/img/backgrounds/video-cta.png"
+                          src="assets/img/backgrounds/video-cta.jpg"
                           className="img-fluid"
                           alt=""
                         />
