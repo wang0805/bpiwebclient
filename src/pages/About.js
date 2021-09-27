@@ -68,7 +68,7 @@ class About extends Component {
                         onClose={() => this.setState({ isOpen: false })}
                       />
                       <button onClick={this.openModal}>
-                        <i className="ion-ios-play-outline" />
+                        <i className="ion-ios-play" />
                       </button>
                     </span> */}
                   </div>

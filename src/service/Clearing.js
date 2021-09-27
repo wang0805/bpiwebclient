@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import ServiceGallery from "./components/ServiceGallery";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
@@ -70,10 +70,14 @@ class Clearing extends Component {
           <div className="service-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1 order-lg-2">
+                {/* <div className="col-lg-8 col-12 order-1 order-lg-2"> */}
+                <div className="col-lg-12 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <ServiceGallery />
+
+                    <div className="align-items-center">
+                      <ServiceGallery />
+                    </div>
 
                     <div className="content section-space--top--30">
                       <div className="row">
@@ -83,7 +87,7 @@ class Clearing extends Component {
                           <p>{t("clearing2")}</p>
                           <p>{t("clearing3")}</p>
                         </div>
-                        <div className="col-lg-6 col-12 section-space--top--30">
+                        {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>{t("software")}</h3>
                           <ul>
                             <li>ATPlatform Technology Limited</li>
@@ -97,7 +101,7 @@ class Clearing extends Component {
                             <li>{t("faqs1")}</li>
                             <li>{null}</li>
                           </ul>
-                        </div>
+                        </div> */}
                         {/* <div className="col-lg-6 col-12 section-space--top--30">
                           <h3>Advisory</h3>
                           <p>Hedging solutions</p>
@@ -107,7 +111,7 @@ class Clearing extends Component {
                   </div>
                 </div>
                 <div className="col-lg-4 col-12 order-2 order-lg-1">
-                  <Sidebar data={service_obj} />
+                  {/* <Sidebar data={service_obj} /> */}
                 </div>
               </div>
             </div>

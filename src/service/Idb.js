@@ -60,7 +60,7 @@ class Idb extends Component {
           <div className="service-section">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1 order-lg-2">
+                <div className="col-lg-12 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
                     <ServiceGallery />
@@ -75,9 +75,9 @@ class Idb extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-12 order-2 order-lg-1">
+                {/* <div className="col-lg-4 col-12 order-2 order-lg-1">
                   <Sidebar data={service_obj} />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

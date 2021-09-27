@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 import { withTranslation } from "react-i18next";
 
@@ -254,30 +254,55 @@ class NavBar extends Component {
                                 {t("service")}
                               </Link>
                               <ul className="submenu">
-                                <li>
+                                <li className="has-children has-children--multilevel-submenu">
+
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/services`}
                                   >
                                     {t("service1")}
                                   </Link>
+                                    <ul className="submenu">
+                                      <li>
+                                        <Link
+                                          to={`${process.env.PUBLIC_URL}/clearing`}
+                                        >
+                                          {t("globalclearing")}
+                                        </Link>
+                                      </li>
+                                      <li>
+                                        <Link to={`${process.env.PUBLIC_URL}/cfd`}>
+                                          {t("emergingmarketcfd")}
+                                        </Link>
+                                      </li>
+                                      <li>
+                                        <Link to={`${process.env.PUBLIC_URL}/idb`}>
+                                          {t("idb")}
+                                        </Link>
+                                      </li>
+                                      <li>
+                                       <a href="https://www.bpitradingsg.com/">
+                                          Trade Facilitation
+                                        </a>
+                                      </li>
+                                    </ul>
                                 </li>
                                 <li>
                                   <Link
-                                    to={`${process.env.PUBLIC_URL}/clearing`}
+                                    to={`${process.env.PUBLIC_URL}/`}
                                   >
-                                    {t("globalclearing")}
+                                    Software
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link to={`${process.env.PUBLIC_URL}/cfd`}>
-                                    {t("emergingmarketcfd")}
+                                  <Link to={`${process.env.PUBLIC_URL}/`}>
+                                    FAQ
                                   </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                   <Link to={`${process.env.PUBLIC_URL}/idb`}>
                                     {t("idb")}
                                   </Link>
-                                </li>
+                                </li> */}
                                 {/* <li>
                                   <Link
                                     to={`${process.env.PUBLIC_URL}/advisory`}
